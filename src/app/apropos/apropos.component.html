@@ -1,0 +1,254 @@
+<div class="bg-[#1D2025] duration-150 " [class.bg-[#d4d4d4]]="mode() == 'claire'">
+
+    <!-- dev mode -->
+    @if (skill() == 'dev'){
+        <app-nav [nav]="'apropos'" [src]="src" (mode)="modeDark($event)"></app-nav>
+
+        <!-- header -->
+        <div class="flex justify-center gap-2 w-full max-[1080px]:grid overflow-hidden">
+            <!-- header gauche -->
+            <div  
+              class="pt-28 gauche pr-20 max-[1080px]:mx-auto max-[1080px]:pr-0 max-sm:pt-14 max-sm:w-[244px] duration-150"
+              [class.gaucheLight]="mode() == 'claire'"
+            >
+                <img id="img" ngSrc="imageBabs2.png" alt="image" width="434" height="434" priority="high" class="max-sm:w-[244px] max-sm:h-[244px]">
+            </div>
+    
+            <!-- header droit -->
+            <div 
+              id="text" 
+              class="text-white duration-150 w-[510px] pt-20 ml-6 pb-5 max-[1080px]:ml-0 max-[1080px]:w-full max-[1080px]:px-5 max-sm:pt-10 max-sm:px-4"
+              [class.text-black]="mode() == 'claire'"
+            >
+                <div class="font-bold text-5xl leading-tight max-sm:text-2xl" [class.text-black]="mode() == 'claire'">
+                    Serigne khalifa Ababacar Sy Nguirane
+                </div>
+                <div class="text-xl font-light mt-5 mb-8 max-sm:text-sm" [class.text-black]="mode() == 'claire'">
+                    Actuellement étudiant en mathématiques appliqués et informatique à l’Université Numérique Cheikh Hamidou Kane, je suis passionné par la création d’interfaces web modernes.<br><br>En tant que développeur front-end et UX designer, je travail sur pas mal de projets personnels et open source. Je partage régulièrement mes avancées sur ces projets à travers mes réseaux.<br><br>Je suis toujours à la recherche de nouvelles opportunités pour continuer ma progression et enrichir mon expérience.  
+                </div>
+                <a href="cv.pdf">
+                    <div 
+                      class=" w-[220px] mx-auto pt-2 h-[50px] text-2xl text-[#1D2025] font-semibold bg-orange-500 rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm max-sm:pt-1 cursor-pointer hover:scale-[105%] duration-500 animate-bounce z-20"
+                    >
+                      mon cv
+                    </div>
+                </a>
+    
+              <!-- blur -->
+              <img ngSrc="blur.svg" alt="background" width="226" height="116" class="absolute top-[150px] left-auto right-auto max-[1080px]:left-0 max-[1080px]:right-0 max-[1080px]:top-[100px] max-[1080px]:mx-auto max-sm:top-[50px] max-sm: z-0" priority="high">
+            </div>
+    
+        </div>
+        <div class="trait w-full h-[1px] duration-150" [class.traitLight]="mode() == 'claire'"></div>
+    
+        <!-- Contact -->
+        <div id="contact" class="text-white mt-52 font-bold text-6xl max-sm:text-3xl max-sm:mt-20" >
+            <div class="text-center" [class.text-black]="mode() == 'claire'">
+                Contactez moi
+            </div>
+            <div class="flex mt-20 justify-center gap-10 animate-bounce max-sm:gap-6 max-sm:mt-14">
+                <a href="https://wa.me/+221773782956" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <img ngSrc="whats-app.svg" alt="whatsapp" width="94" height="94">
+                </a>
+                <a href="https://www.instagram.com/babs_990?igsh=MWc1Ymo0Z3ZvMHZrNw==" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <img ngSrc="instagram.svg" alt="instagram" width="94" height="94">
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/serigne-khalifa-ababacar-sy-nguirane-675676273?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoysBPWGZSXiniZxeoiBenA%3D%3D"
+                  class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]"
+                >
+                    <img ngSrc="LinkedIn.svg" alt="linkedIn" width="94" height="94">
+                </a>
+            </div>
+        </div>
+    
+        <!-- Histoire -->
+        <div class="mt-32 w-full text-white max-sm:mt-24" >
+            <div class="w-[333px] mx-auto max-sm:w-[177px] img">
+                <img ngSrc="imageBabs3.png" alt="image" width="333" height="333">
+            </div>
+            <div class="text-5xl font-bold text-center mt-12 max-sm:text-2xl max-sm:mt-6" [class.text-black]="mode() == 'claire'">
+                Mon histoire
+            </div>
+            <div 
+              class="text-base font-light w-[1015px] mx-auto mt-12 leading-relaxed max-[1080px]:w-auto max-[1080px]:px-10 max-sm:text-sm max-sm:mt-6 histoire"
+              [class.text-black]="mode() == 'claire'"
+            >
+                Après mon baccalauréat en série scientifique, on m'a orienté dans une université publique ( UNCHK ) dans la filière mathématiques et informatique. Fraîchement diplômé et avec peu de connaissance dans le domaine du numérique, les premières années ont été très fastidieux. A ce stade précis de ma carrière deux questions étroitement liées me tourmentent: Sur quel domaine je dois me spécialiser dans l'informatique ainsi que quel est le but précis de ma carrière?<br><br>Un événement anodin m'a permis de répondre à ces questions. Etant membre dans une association familiale, j'ai été chargé de confectionner le design de la carte de visite de l'association. Après avoir terminé la conception j'ai reçu énormément de compliments pour mon travail. C'est ainsi que j'ai compris que ma réelle passion réside dans la conception et le développement d'interfaces web attractives, intuitives et modernes.<br><br>Depuis lors je travaille d'arrache pieds pour booster mes connaissances et compétences dans ce domaine si passionnant. Aujourd'hui je suis plus que jamais déterminé à montrer ma valeur et réaliser mon rêve qui est de devenir un lead développeur front.
+            </div>
+        </div>
+    
+        <!-- Outils et technos -->
+        <div class="text-white mt-56 pb-24 max-sm:mt-24 outils max-sm:pb-12" >
+            <div class=" font-bold text-5xl text-center max-sm:text-2xl" [class.text-black]="mode() == 'claire'">
+                Outils et technologies
+            </div>
+            <div class="w-[748px] text-xl font-normal mx-auto mt-7 max-[970px]:w-[620px] max-sm:text-sm max-sm:w-[296px] max-sm:mt-6" [class.text-black]="mode() == 'claire'">
+                A travers mes projets j’ai eu à explorer pas mal de technologies et d’outils. Voici les outils avec lesquel je travail le plus et dont j’ai une certaine expertise.
+            </div>
+            <div class="max-[970px]:w-[700px] max-[720px]:w-[286px] rounded-[48px] w-[896px] bg-[#1D2025] shadow-ombre1 border-[1px] border-[#f9731647] border-dashed mx-auto mt-10 max-sm:mt-6">
+                <div class="pt-10 flex justify-center gap-16 max-[720px]:gap-3">
+                    <img ngSrc="html.png" alt="html" width="121" height="121" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                    <img ngSrc="css.png" alt="css" width="86" height="121" class="max-[720px]:w-[28px] max-[720px]:h-[40px]">
+                    <img ngSrc="javascript.png" alt="js" width="112" height="112" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                    <img ngSrc="angular.png" alt="angular" width="107" height="121" class="max-[720px]:w-[39px] max-[720px]:h-[40px]">
+                </div>
+                <div class="flex pt-10 justify-center gap-10 items-center max-[720px]:gap-3">
+                    <img ngSrc="typescript.png" alt="typescript" width="110" height="111" class="max-[720px]:w-[40px] max-[720px]:h-[41px]">
+                    <img ngSrc="tailwind.png" alt="tailwind" width="173" height="43" class="max-[720px]:w-[80px] max-[720px]:h-[20px]">
+                    <img ngSrc="visual.png" alt="visual" width="80" height="80" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                </div>
+                <div class="flex pt-10 justify-center gap-10 items-center pb-10 max-[720px]:gap-3 ">
+                    <img ngSrc="illustrator.png" alt="illustrator" width="98" height="96" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                    <img ngSrc="figma.png" alt="figma" width="67" height="102" class="max-[720px]:w-[26.27px] max-[720px]:h-[40px]">
+                    <img ngSrc="indesign.png" alt="indesign" width="88" height="86" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                </div>
+    
+            </div>
+        </div>
+        
+        <app-footer></app-footer>
+    }
+
+    <!-- ux mode -->
+    @if (skill() == 'ux'){
+        <app-nav [nav]="'apropos'" [src]="src" (mode)="modeDark($event)"></app-nav>
+    
+        <!-- header -->
+        <div class="flex justify-center gap-2 w-full max-[1080px]:grid overflow-hidden">
+            <!-- header gauche -->
+            <div  
+              class="pt-28 gauche pr-20 max-[1080px]:mx-auto max-[1080px]:pr-0 max-sm:pt-14 max-sm:w-[244px] duration-150"
+              [class.gaucheLight]="mode() == 'claire'"
+            >
+                <img id="img" ngSrc="imageBabs2.png" alt="image" width="434" height="434" priority="high" class="max-sm:w-[244px] max-sm:h-[244px]">
+            </div>
+    
+            <!-- header droit -->
+            <div 
+              id="text" 
+              class="text-white duration-150 w-[510px] pt-20 ml-6 pb-5 max-[1080px]:ml-0 max-[1080px]:w-full max-[1080px]:px-5 max-sm:pt-10 max-sm:px-4"
+              [class.text-black]="mode() == 'claire'"
+            >
+                <div class="font-bold text-5xl leading-tight max-sm:text-2xl" [class.text-black]="mode() == 'claire'">
+                    Serigne khalifa Ababacar Sy Nguirane
+                </div>
+                <div class="text-xl font-light mt-5 mb-8 max-sm:text-sm" [class.text-black]="mode() == 'claire'">
+                    En tant que développeur front-end et UX designer, je suis passionné par la création d’interfaces web et mobile modernes.<br><br>J'aime apprendre de nouvelles choses et partager mes connaissances avec les autres. Je partage régulièrement les avancées sur mes projets à travers mes réseaux.<br><br>Je suis toujours à la recherche de nouvelles opportunités pour continuer ma progression et enrichir mon expérience.  
+                </div>
+                <a href="cvux.pdf">
+                    <div 
+                      class=" w-[220px] mx-auto pt-2 h-[50px] text-2xl text-[#1D2025] font-semibold bg-orange-500 rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm max-sm:pt-1 cursor-pointer hover:scale-[105%] duration-500 animate-bounce z-20"
+                    >
+                      mon cv
+                    </div>
+                </a>
+    
+              <!-- blur -->
+              <img ngSrc="blur.svg" alt="background" width="226" height="116" class="absolute top-[150px] left-auto right-auto max-[1080px]:left-0 max-[1080px]:right-0 max-[1080px]:top-[100px] max-[1080px]:mx-auto max-sm:top-[50px] max-sm: z-0" priority="high">
+            </div>
+    
+        </div>
+        <div class="trait w-full h-[1px] duration-150" [class.traitLight]="mode() == 'claire'"></div>
+    
+        <!-- Contact -->
+        <div id="contact" class="text-white mt-52 font-bold text-6xl max-sm:text-3xl max-sm:mt-20" >
+            <div class="text-center" [class.text-black]="mode() == 'claire'">
+                Contactez moi
+            </div>
+            <div class="flex mt-20 justify-center gap-10 animate-bounce max-sm:gap-6 max-sm:mt-14">
+                <a href="https://wa.me/+221773782956" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <img ngSrc="whats-app.svg" alt="whatsapp" width="94" height="94">
+                </a>
+                <a href="https://www.instagram.com/babs_990?igsh=MWc1Ymo0Z3ZvMHZrNw==" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <img ngSrc="instagram.svg" alt="instagram" width="94" height="94">
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/serigne-khalifa-ababacar-sy-nguirane-675676273?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoysBPWGZSXiniZxeoiBenA%3D%3D"
+                  class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]"
+                >
+                    <img ngSrc="LinkedIn.svg" alt="linkedIn" width="94" height="94">
+                </a>
+            </div>
+        </div>
+    
+        <!-- Histoire -->
+        <div class="mt-32 w-full text-white max-sm:mt-24" >
+            <div class="w-[333px] mx-auto max-sm:w-[177px] img">
+                <img ngSrc="imageBabs3.png" alt="image" width="333" height="333">
+            </div>
+            <div class="text-5xl font-bold text-center mt-12 max-sm:text-2xl max-sm:mt-6" [class.text-black]="mode() == 'claire'">
+                Mon histoire
+            </div>
+            <div 
+              class="text-base font-light w-[1015px] mx-auto mt-12 leading-relaxed max-[1080px]:w-auto max-[1080px]:px-10 max-sm:text-sm max-sm:mt-6 histoire"
+              [class.text-black]="mode() == 'claire'"
+            >
+                Après mon baccalauréat en série scientifique, on m'a orienté dans une université publique ( UNCHK ) dans la filière mathématiques et informatique. Fraîchement diplômé et avec peu de connaissance dans le domaine du numérique, les premières années ont été très fastidieux. A ce stade précis de ma carrière deux questions étroitement liées me tourmentent: Sur quel domaine je dois me spécialiser dans l'informatique ainsi que quel est le but précis de ma carrière?<br><br>Un événement anodin m'a permis de répondre à ces questions. Etant membre dans une association familiale, j'ai été chargé de confectionner le design de la carte de visite de l'association. Après avoir terminé la conception j'ai reçu énormément de compliments pour mon travail. C'est ainsi que j'ai compris que ma réelle passion réside dans la conception et le développement d'interfaces attractives, intuitives et modernes.<br><br>Depuis lors je travaille d'arrache pieds pour booster mes connaissances et compétences dans ce domaine si passionnant. Aujourd'hui je suis plus que jamais déterminé à montrer ma valeur et réaliser mon rêve qui est de devenir un UX UI Designer senior.
+            </div>
+        </div>
+    
+        <!-- Outils et methodologies -->
+        <div 
+          class=" mt-20 pb-24 max-sm:mt-12 outils max-sm:pb-12"
+          [class.text-black]="mode() == 'claire'"
+          [class.text-white]="mode() != 'claire'"
+        >
+            <div class=" font-bold text-5xl text-center max-sm:text-2xl">
+                Outils et méthodologies
+            </div>
+            <div class="w-[748px] text-xl font-normal mx-auto mt-7 max-[970px]:w-[620px] max-sm:text-sm max-sm:w-[296px] max-sm:mt-6">
+                A travers mes projets j’ai eu à explorer pas mal d’outils et de méthodologies de conception. Voici les outils avec lequel je travail le plus et dont j’ai une certaine expertise.
+            </div>
+            <div 
+              class="max-[970px]:w-[700px] max-[720px]:w-[350px] max-[720px]:grid max-sm:gap-8 rounded-[48px] w-[896px] bg-[#1D2025] shadow-ombre1 border-[1px] border-[#f9731647] border-dashed mx-auto mt-10 max-sm:mt-6 flex justify-center py-14 gap-28 max-sm:py-10 text-white max-sm:w-[296px]"
+              [class.border-orange-500]="mode() == 'claire'"
+            >
+                <!-- outils -->
+                <div class="max-sm:mx-auto">
+                    <div class="text-3xl text-orange-500 font-bold underline underline-offset-8 mb-6 max-sm:text-xl">
+                        Outils
+                    </div>
+                    @for (item of techno(); track item) {
+                        <div class="">
+                            <div class="flex items-center gap-[21px] max-sm:gap-3">  
+                                <div class="h-[41px] w-[41px] rounded-full border-[1px] flex flex-col justify-center border-dashed border-orange-500  max-sm:w-[24px] max-sm:h-[24px]">
+                                    <div class="w-[18px] h-[18px] mx-auto bg-cyan-600 rounded-full max-sm:w-[10px] max-sm:h-[10px]"></div>
+                                </div>
+                                <div class="text-2xl font-medium max-sm:text-base">
+                                    {{item.title}}
+                                </div>
+                            </div>
+                            @if (item.id !== 4) {
+                                <div class="border-dashed border-l-[1px] my-[2px] border-orange-500 h-[41px] w-[0.1px] max-sm:ml-3 ml-[20.5px] max-sm:h-[18px] "></div>
+                            }
+                        </div>
+                    }
+                </div>
+                <!-- methodologies -->
+                <div class="">
+                    <div class="text-3xl text-orange-500 font-bold underline underline-offset-8 mb-6 max-sm:text-xl">
+                        méthodologies
+                    </div>
+                    @for (item of methode(); track item) {
+                        <div class="">
+                            <div class="flex items-center gap-[21px] max-sm:gap-3">  
+                                <div class="h-[41px] w-[41px] rounded-full border-[1px] border-dashed border-orange-500 content-center justify-items-center max-sm:w-[24px] max-sm:h-[24px] flex flex-col justify-center">
+                                    <div class="w-[18px] h-[18px] bg-[#5D3B88] rounded-full mx-auto max-sm:w-[10px] max-sm:h-[10px]"></div>
+                                </div>
+                                <div class="text-2xl font-medium max-sm:text-base">
+                                    {{item.title}}
+                                </div>
+                            </div>
+                            @if (item.id !== 9) {
+                                <div class="border-dashed border-l-[1px] my-[2px] border-orange-500 h-[41px] w-[0.1px] max-sm:ml-3 ml-[20.5px] max-sm:h-[18px] "></div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        
+        <app-footer></app-footer>
+    }
+</div>

@@ -1,0 +1,48 @@
+<div class="bg-[#1D2025] duration-150 h-screen w-screen flex flex-col place-content-center">
+    <div class=" text-white ">
+        <div id="babs" class="mx-auto w-[191px] h-[191px] rounded-full bg-gray-500 max-sm:w-[100px] max-sm:h-[100px]">
+            <img ngSrc="imageBabs3.png" alt="image" width="191" height="191" priority="high">
+        </div>
+        <div id="bienvenue" class="text-4xl font-bold text-center mt-6 max-sm:text-3xl max-sm:mt-4">
+            Bienvenue !
+        </div>
+        <div id="choix" class="text-2xl text-center mt-3 max-sm:text-xl max-sm:mt-2">
+            Choisissez sur quelle interface basculer 
+        </div>
+        <div class="flex justify-center gap-20 mt-10 max-sm:grid max-sm:gap-4" id="boutonChoix">
+            <!-- bouton dev -->
+            <div 
+              class="bg-orange-500 border-[1px] border-[#1D2025] w-[301px] h-[72px] rounded-full flex justify-center items-center gap-1 duration-300 stroke-[#1D2025]  text-[#1D2025] cursor-pointer hover:bg-[#1D2025] hover:border-orange-500 hover:text-white hover:stroke-[#fff] z-20 max-sm:h-[50px]"
+              (click)="devmode()"
+              routerLink="/acceuil"
+            >
+                <svg class="w-[47px] h-[47px] max-sm:w-[35px] max-sm:h-[35px]" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.25 31.3333L43.0833 23.5L35.25 15.6667"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.7493 15.6667L3.91602 23.5L11.7493 31.3333"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28.3952 7.83334L18.6035 39.1667"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+                <div class="text-2xl font-medium max-sm:text-xl">
+                    Développeur 
+                </div>            
+            </div>
+
+            <!-- bouton ux -->
+            <div 
+              class="bg-orange-500 border-[1px] border-[#1D2025] w-[301px] h-[72px] rounded-full flex justify-center items-center gap-1 duration-300 stroke-[#1D2025]  text-[#1D2025] cursor-pointer hover:bg-[#1D2025] hover:border-orange-500 hover:text-white hover:stroke-[#fff] z-10 max-sm:h-[50px]"
+              (click)="uxmode()"
+              routerLink="/acceuil"
+            >
+                <svg class="w-[47px] h-[47px] max-sm:w-[35px] max-sm:h-[35px]"  viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.25 39.1667C35.25 36.0504 34.0121 33.0617 31.8085 30.8582C29.605 28.6546 26.6163 27.4167 23.5 27.4167C20.3837 27.4167 17.395 28.6546 15.1915 30.8582C12.9879 33.0617 11.75 36.0504 11.75 39.1667"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.4993 27.4167C27.8256 27.4167 31.3327 23.9096 31.3327 19.5833C31.3327 15.2571 27.8256 11.75 23.4993 11.75C19.1731 11.75 15.666 15.2571 15.666 19.5833C15.666 23.9096 19.1731 27.4167 23.4993 27.4167Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.4993 43.0833C34.3149 43.0833 43.0827 34.3156 43.0827 23.5C43.0827 12.6844 34.3149 3.91666 23.4993 3.91666C12.6838 3.91666 3.91602 12.6844 3.91602 23.5C3.91602 34.3156 12.6838 43.0833 23.4993 43.0833Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="text-2xl font-medium max-sm:text-xl">
+                    UX / UI 
+                </div>            
+            </div>
+        </div>
+        <img src="blur.svg" alt="" class="fixed bottom-3 right-0 left-0 mx-auto z-0 max-sm:w-full">
+
+    </div>
+</div>

@@ -1,0 +1,11 @@
+@theme {
+    --color-midnight: #0000005e;
+  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Outfit';
+}

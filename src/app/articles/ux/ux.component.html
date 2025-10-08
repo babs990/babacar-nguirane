@@ -1,0 +1,22 @@
+<div 
+  class="bg-[#1D2025] duration-150 " 
+  [class.bg-[#d4d4d4]]="mode() == 'claire'"
+  [class.text-white]="mode() != 'claire'"
+>
+    <app-nav [nav]="'articles'" [src]="src" (mode)="modeDark($event)"></app-nav>
+
+    <div class="mx-auto w-[682px] mt-20 max-[800px]:w-[290px]">
+        <img ngSrc="ux2.png" alt="angular" width="682" height="297">
+    </div>
+
+    <div class="font-bold text-3xl text-center mt-20 max-[800px]:text-2xl max-sm:mt-10">
+        Qu'est-ce que la conception de l'expérience utilisateur (UX) ?
+    </div>
+    <div class=" w-[800px] mx-auto font-light mt-5 leading-relaxed tracking-wide max-[800px]:text-sm max-[800px]:w-full max-[800px]:px-5">
+        La conception de l'expérience utilisateur (UX) est le processus utilisé par les équipes de conception pour créer des produits qui offrent des expériences significatives et pertinentes aux utilisateurs. La conception UX implique la conception de l'ensemble du processus d'acquisition et d'intégration du produit, y compris les aspects de l'image de marque, de la conception, de la convivialité et de la fonction. <br>
+        Concevoir une expérience implique non seulement de rendre le logiciel facile à utiliser, mais aussi de concevoir les autres expériences liées au produit, par exemple la campagne marketing , le packaging et le service après-vente. Plus important encore, la conception UX vise à fournir des solutions qui répondent aux problèmes et aux besoins. Après tout, personne n'utilisera un produit qui ne sert à rien.   
+    </div>
+
+    <app-footer></app-footer>
+
+</div>

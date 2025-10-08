@@ -1,0 +1,394 @@
+<div class="bg-[#FCFBFC] duration-150 " [class.bg-[#d4d4d4]]="mode() == 'claire'">
+
+    <!-- dev mode -->
+    @if (skill() == 'dev') {
+
+        <app-nav [src]="src" (mode)="modeDark($event)"></app-nav>
+    
+        <div class="flex justify-center max-[1080px]:grid">
+            <!-- head gauche -->
+            <div 
+              class=" duration-150  w-[530px]  gauche pt-[130px] max-[1080px]:pt-[60px] max-sm:w-[296px] max-sm:pt-24 z-50"
+              [class.text-black]="mode() == 'claire'"
+              [class.text-white]="mode() != 'claire'"
+              [class.gaucheLight]="mode() == 'claire'"
+            >
+                <div class="text-6xl font-bold overflow-hidden max-sm:text-3xl ">
+                    <div class="translate-y-[100%] salut">
+                        Salut! Je suis Babacar Nguirane
+                    </div>
+                </div>
+                <div class="text-2xl my-8 overflow-hidden max-sm:text-sm max-sm:mt-5">
+                    <div class="passion translate-y-[-100%] ">
+                        Passionné par la création d’interface web attractive et moderne, je suis développeur web front-end.
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center animate-bounce max-sm:mt-9">
+                    <div 
+                      class=" w-[220px] pt-2 h-[50px] text-2xl text-[#1D2025] font-semibold bg-orange-500 rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm max-sm:pt-1 cursor-pointer hover:scale-[105%] hover:text-black duration-500"
+                      (click)="contact()"
+                      [class.text-neutral-300]="mode() == 'claire'"
+                    >
+                        Contactez moi 
+                    </div>
+                    <a target="_blank" 
+                      href="https://www.linkedin.com/in/serigne-khalifa-ababacar-sy-nguirane-675676273?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoysBPWGZSXiniZxeoiBenA%3D%3D"
+                      class="cursor-pointer hover:scale-[110%] duration-500"
+                    >
+                        <img ngSrc="LinkedIn.svg" alt="linkedIn" width="44" height="44" class="max-sm:w-[28px] max-sm:h-[28px]">
+                    </a>
+                    <a target="_blank"  href="https://github.com/babs990" class="cursor-pointer hover:scale-[110%] duration-500">
+                        <img ngSrc="GitHub.svg" alt="github" width="44" height="44" class="max-sm:w-[28px] max-sm:h-[28px] ">
+                    </a>
+                </div>
+    
+            </div>
+            <!-- blur -->
+            <img ngSrc="blur.svg" alt="background" width="483" height="354" class="absolute top-[230px] left-0 max-[1080px]:left-0 max-[1080px]:right-0 max-[1080px]:mx-auto max-sm:top-[80px] z-10" priority="high">
+    
+        
+            <!-- head droit -->
+            <div class="pt-[70px] pl-[70px] babs max-[1080px]:pl-0 max-sm:mx-auto pb-6">
+                <img ngSrc="imageBabsV.png" alt="image" width="503" height="458" priority="high" class="max-sm:w-[171.33px] max-sm:h-[156px]">
+            </div>
+        </div>
+    
+        <div class="trait h-1 w-full duration-150" [class.traitLight]="mode() == 'claire'"></div>
+    
+        <!-- Outils et technos -->
+        <div 
+          class=" mt-20 pb-24 max-sm:mt-12 outils max-sm:pb-12"
+          [class.text-black]="mode() == 'claire'"
+          [class.text-white]="mode() != 'claire'"
+        >
+            <div class=" font-bold text-5xl text-center max-sm:text-2xl">
+                Outils et technologies
+            </div>
+            <div class="w-[748px] text-xl font-normal mx-auto mt-7 max-[970px]:w-[620px] max-sm:text-sm max-sm:w-[296px] max-sm:mt-6">
+                A travers mes projets j’ai eu à explorer pas mal de technologies et d’outils. Voici les outils avec lesquel je travaille le plus et dont j’ai une certaine expertise.
+            </div>
+            <div 
+              class="max-[970px]:w-[700px] max-[720px]:w-[286px] rounded-[48px] w-[896px] bg-[#1D2025] shadow-ombre1 border-[1px] border-[#f9731647] border-dashed mx-auto mt-10 max-sm:mt-6 max-sm:w-[296px]"
+              [class.border-orange-500]="mode() == 'claire'"
+            >
+                <div class="pt-10 flex justify-center gap-16 max-[720px]:gap-3">
+                    <img ngSrc="html.png" alt="html" width="121" height="121" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                    <img ngSrc="css.png" alt="css" width="86" height="121" class="max-[720px]:w-[28px] max-[720px]:h-[40px]">
+                    <img ngSrc="javascript.png" alt="js" width="112" height="112" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                    <img ngSrc="angular.png" alt="angular" width="107" height="121" class="max-[720px]:w-[39px] max-[720px]:h-[40px]">
+                </div>
+                <div class="flex pt-10 justify-center gap-10 items-center max-[720px]:gap-3">
+                    <img ngSrc="typescript.png" alt="typescript" width="110" height="111" class="max-[720px]:w-[40px] max-[720px]:h-[41px]">
+                    <img ngSrc="tailwind.png" alt="tailwind" width="173" height="43" class="max-[720px]:w-[80px] max-[720px]:h-[20px]">
+                    <img ngSrc="visual.png" alt="visual" width="80" height="80" class="max-[720px]:w-[40px] max-[720px]:h-[40px]">
+                </div>
+                <div class="flex pt-10 justify-center gap-10 items-center pb-10 max-[720px]:gap-3 ">
+                    <img ngSrc="github.png" alt="illustrator" width="112" height="100" class="max-[720px]:w-[44px] max-[720px]:h-[40px]">
+                    <img ngSrc="git.png" alt="figma" width="159" height="60" class="max-[720px]:w-[62px] max-[720px]:h-[24px]">
+                    <img ngSrc="vercel.png" alt="indesign" width="160" height="47" class="max-[720px]:w-[63px] max-[720px]:h-[18px]">
+                </div>
+    
+            </div>
+        </div>
+    
+        <div 
+          class=" animate-bounce w-[220px] mx-auto pt-2 mt-5 h-[50px] text-2xl text-[#1D2025] font-semibold bg-orange-500 rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm max-sm:pt-1 cursor-pointer max-sm:mt-0 max-sm:mb-5"
+          [class.text-black]="mode() == 'claire'"
+        >
+            <div class="hover:scale-[105%] duration-500" routerLink="/apropos">
+                Mon histoire
+            </div>
+        </div>
+    
+        <!-- Projets -->
+        <div class="mt-40 text-white  max-[1140px]:mt-20">
+            <div 
+              class="text-5xl text-center font-bold max-sm:text-2xl projets duration-150"
+              [class.text-black]="mode() == 'claire'"
+            >
+                Projets
+            </div>
+            <div class="grid-cols-[345px_345px_345px] grid justify-center mt-14 gap-5 max-[1140px]:grid-cols-[345px] max-[1140px]:gap-11 max-sm:grid-cols-[296px] max-sm:mt-6">
+                @for (item of projets3(); track item) {
+                    <div class="w-[345px] max-sm:w-[296px] carteProjets">
+                        <!-- image -->
+                        <div class="w-full rounded-full h-[345px] border-[1px] border-orange-500 border-dashed p-[6px] max-sm:w-[189px] max-sm:h-[189px] max-sm:p-[6px] max-sm:mx-auto">
+                            <img 
+                              [ngSrc]="item.img" 
+                              [alt]="item.nom" 
+                              width="331" 
+                              height="331" 
+                              class="hover:scale-[103%] duration-700 max-sm:w-[175px] max-sm:h-[175px]"
+                            >
+                        </div>
+    
+                        <!-- titre et description -->
+                        <div 
+                          class="w-full border-[1px] border-[#f9731647] mt-4 py-6 pl-12 rounded-[43px] bg-[#1D2025] hover:shadow-ombre1 duration-700 max-sm:mt-3 max-sm:pl-9"
+                          [class.border-orange-500]="mode() == 'claire'"
+                        >
+                            <div class="text-3xl font-medium max-sm:text-xl">
+                                {{item.nom}}
+                            </div>
+                            <div class="text-base font-light my-5 w-[231px] max-sm:text-xs">
+                                {{item.description}}
+                            </div>
+                            <div class="flex gap-3 items-center">
+                                <a [href]="item.lien">
+                                    <img ngSrc="link.svg" alt="link" width="34" height="17" class="cursor-pointer">
+                                </a>
+                                <a [href]="item.lien" target="_blank" class="text-sm font-semibold cursor-pointer hover:text-cyan-800 duration-500">
+                                    {{item.lien}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div 
+              class=" w-[220px]  h-[50px] text-2xl text-[#1D2025] font-semibold bg-orange-500 rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm flex justify-center gap-3 mx-auto mt-14 max-sm:items-center cursor-pointer animate-bounce"
+              routerLink="/projets"
+            >
+                <div class="pt-2 max-sm:pt-0">
+                    Voir plus 
+                </div>
+                <img ngSrc="fleche.svg" alt="fleche" width="12" height="26" class="max-sm:w-[6px] max-sm:h-[11px]" >
+            </div>
+        </div>
+    
+        <!-- Article -->
+        <div class="w-[739px] max-[900px]:w-[600px] max-sm:w-[296px] mx-auto">
+            <div 
+              class="w-[739px] rounded-[33px] backdrop-blur-3xl flex justify-center gap-20 py-9 place-self-center mt-56 text-white max-[900px]:w-[600px] max-[900px]:gap-10 max-sm:grid max-sm:w-[296px] max-sm:py-5 max-sm:mt-24 overflow-hidden article"
+              [class.bg-[#1d20256c]]="mode() == 'claire'"
+              [class.bg-[#ffffff27]]="mode() != 'claire'"
+            >
+                <div class="w-[277px] h-[277px] bg-[#1D2025] rounded-full p-[18px] max-sm:w-[91px] max-sm:h-[91px] max-sm:p-[8px] max-sm:mx-auto imgArticle">
+                    <img ngSrc="angularArticle.png" alt="angular" width="237" height="248">
+                </div>
+                <div class="w-[294px] max-sm:w-[262px] descArticle">
+                    <div class="font-semibold text-3xl max-sm:text-xl">
+                        C’est quoi Angular?
+                    </div>
+                    <div class="text-base my-10 max-sm:text-xs max-sm:mt-5 max-sm:mb-8">
+                        Dans cet article j’explique de manière claire c’est quoi Angular ainsi que les avantages et les inconvénients de ce Framework.
+                    </div>
+                    <div 
+                      class=" w-[220px]  h-[50px] text-2xl text-orange-500 border-[1px] border-orange-500 font-semibold bg-[#1D2025] rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm flex justify-center gap-3 mx-auto max-sm:items-center max-sm:pt-[1px]  cursor-pointer pt-2 animate-bounce hover:border-white duration-300 hover:text-white"
+                      routerLink="/articles/angular"
+                    >
+                        Lire l’article
+                    </div>    
+                </div>
+            </div>
+            <div 
+              class="text-base text-cyan-600 mt-8 underline underline-offset-8 mb-4 hover:text-cyan-400 duration-500 cursor-pointer"
+              routerLink="/articles"
+            >
+                Voir tous les articles
+            </div>
+        </div>
+    
+        <!-- contact -->
+        <div 
+          id="contact" 
+          class= "mt-52 font-bold text-6xl max-sm:text-3xl max-sm:mt-20" 
+          [class.text-black]="mode() == 'claire'"
+          [class.text-white]="mode() != 'claire'"
+        >
+            <div class="text-center">
+                Contactez moi
+            </div>
+            <div class="flex mt-20 justify-center gap-10 animate-bounce max-sm:gap-6 max-sm:mt-14">
+                <a href="https://wa.me/+221773782956" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <img ngSrc="whats-app.svg" alt="whatsapp" width="94" height="94">
+                </a>
+                <a href="https://www.instagram.com/babs_990?igsh=MWc1Ymo0Z3ZvMHZrNw==" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <img ngSrc="instagram.svg" alt="instagram" width="94" height="94">
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/serigne-khalifa-ababacar-sy-nguirane-675676273?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoysBPWGZSXiniZxeoiBenA%3D%3D"
+                  class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]"
+                >
+                    <img ngSrc="LinkedIn.svg" alt="linkedIn" width="94" height="94">
+                </a>
+            </div>
+        </div>
+
+        <app-footer></app-footer>
+
+    }
+
+    <!-- ux mode -->
+    @if (skill() == 'ux') {
+
+        <app-nav [src]="src" (mode)="modeDark($event)"></app-nav>
+    
+        <div class=" hero flex justify-center max-[1080px]:grid" [style.background-image]="bgStyle">
+            <!-- head gauche -->
+            <div 
+              class=" duration-150 leading-[160%]  w-[530px]  gauche pt-[110px] max-[1080px]:pt-[60px] max-sm:w-full max-sm:pt-24 max-sm:px-7 z-50"
+              [class.text-black]="mode() == 'claire'"
+              [class.text-black]="mode() != 'claire'"
+              [class.gaucheLight]="mode() == 'claire'"
+            >
+                <div class="text-5xl font-bold leading-[160%] overflow-hidden max-sm:text-3xl " [class.text-[#2B2F38]]="mode() != 'claire'">
+                    <div class="">
+                        Salut! Je suis Babacar Nguirane
+                    </div>
+                </div>
+                <div class="text-base mt-6 mb-6 overflow-hidden max-sm:text-sm max-sm:mt-5" >
+                    <div class="  ">
+                        Passionné par la création d’interface web et mobile intuitive et moderne, j’accompagne les entreprises dans la création de solutions numériques à fort impact en m’appuyant sur une approche rigoureuse de la conception centrée utilisateur.                    
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center  max-sm:mt- max-sm:gap-2">
+                    <div 
+                      class=" px-[25px]  h-[50px] content-center text-base text-[#fff] font-medium bg-[#7E452B] rounded-full text-center  max-sm:text-sm max-sm:pt-1 cursor-pointer hover:scale-[105%] duration-500"
+                      (click)="contact()"
+                    >
+                        Contactez moi 
+                    </div>
+                    <a target="_blank"
+                      href="https://www.linkedin.com/in/babacar-nguirane/"
+                      class="cursor-pointer hover:scale-[110%] duration-500"
+                      >
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="40" height="40" rx="20" fill="#7E452B"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2121 16.1552V18.1916C20.6386 17.542 21.2264 17.0143 21.918 16.66C22.6096 16.3058 23.3814 16.1372 24.1577 16.1708C28.3037 16.1708 29.2001 18.7628 29.2001 22.1348V29H25.3601V22.9136C25.3601 21.4616 25.0673 19.5944 22.8065 19.5944C20.6141 19.5944 20.2397 21.1748 20.2397 22.8056V29H16.4117V16.1552H20.2121ZM13.8401 12.9272C13.8396 13.3076 13.7269 13.6794 13.516 13.996C13.3051 14.3126 13.0054 14.5598 12.6545 14.7068C12.3038 14.8526 11.9176 14.8907 11.5452 14.8163C11.1727 14.742 10.8308 14.5585 10.5629 14.2892C10.2946 14.0197 10.1119 13.677 10.0378 13.304C9.96372 12.931 10.0016 12.5444 10.1466 12.1928C10.2917 11.8413 10.5375 11.5405 10.853 11.3282C11.1686 11.116 11.5398 11.0018 11.9201 11C12.1729 11 12.4231 11.0499 12.6565 11.1468C12.8899 11.2438 13.1019 11.3858 13.2803 11.5649C13.4587 11.7439 13.6 11.9565 13.696 12.1902C13.7921 12.424 13.8411 12.6745 13.8401 12.9272Z" fill="#FFFEFC"/>
+                      <path d="M13.84 16.1708H10V29H13.84V16.1708Z" fill="#FFFEFC"/>
+                      </svg>
+                    </a>
+                    <a target="_blank" href="https://dribbble.com/babs990/about?utm_source=Clipboard_%22clipboard_about%22&utm_campaign=%22babs990%22&utm_content=%22About%20babs990%22&utm_medium=Social_Share" class="cursor-pointer hover:scale-[110%] duration-500">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#7E452B"/>
+                        <path d="M29 20C29.0015 21.1854 28.768 22.3594 28.3132 23.4541C27.8583 24.5488 27.1911 25.5425 26.3499 26.3778C25.5156 27.2106 24.5254 27.8708 23.4359 28.3207C22.3463 28.7706 21.1788 29.0014 20 29C15.0293 29 11 24.9707 11 20C10.9968 17.6923 11.8832 15.4721 13.475 13.8013C14.3148 12.915 15.3267 12.2094 16.4486 11.7277C17.5706 11.2461 18.779 10.9984 20 11C21.1788 10.9986 22.3463 11.2294 23.4359 11.6793C24.5254 12.1292 25.5156 12.7894 26.3499 13.6222C27.1911 14.4575 27.8583 15.4512 28.3132 16.5459C28.768 17.6406 29.0015 18.8146 29 20Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M28.9999 20C27.6868 20 24.0643 19.505 20.8221 20.9283C17.3 22.475 14.7498 24.8744 13.6383 26.3661" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.625 11.6544C18.0335 12.9544 21.107 16.2642 22.25 19.5501C23.393 22.8359 23.816 26.876 24.077 28.0258" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.0695 18.875C12.7696 18.9776 17.27 19.0698 20.15 17.84C23.03 16.6101 25.5081 14.348 26.3582 13.6302M11.6752 23.4258C12.4683 25.3454 13.8986 26.9331 15.7252 27.9218" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 20C10.9968 17.6923 11.8832 15.4721 13.475 13.8013C14.3148 12.915 15.3267 12.2094 16.4486 11.7277C17.5706 11.2461 18.779 10.9984 20 11M23.6 11.7488C24.6251 12.1969 25.5577 12.8322 26.3499 13.6222C27.1911 14.4575 27.8583 15.4512 28.3132 16.5459C28.768 17.6406 29.0015 18.8146 29 20C29 21.1079 28.7997 22.1694 28.433 23.15M20 29C21.1788 29.0014 22.3463 28.7706 23.4359 28.3207C24.5254 27.8708 25.5156 27.2106 26.3499 26.3778" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://www.behance.net/babacarnguirane09" class="cursor-pointer hover:scale-[110%] duration-500">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#7E452B"/>
+                        <path d="M15.8175 14C16.3945 14 16.9281 14.0464 17.4157 14.1839C17.9042 14.2758 18.3042 14.4596 18.6591 14.689C19.0148 14.9187 19.2812 15.2403 19.4581 15.6538C19.636 16.067 19.7254 16.5731 19.7254 17.1237C19.7254 17.7672 19.5918 18.3179 19.2812 18.7311C19.0148 19.1452 18.5706 19.512 18.0378 19.7878C18.7927 20.0181 19.3697 20.4313 19.7254 20.9819C20.0812 21.5326 20.3024 22.2225 20.3024 23.0034C20.3024 23.6469 20.1687 24.1976 19.9466 24.6572C19.7254 25.1169 19.3697 25.5301 18.9697 25.8059C18.535 26.1011 18.0547 26.3184 17.5494 26.4484C17.0166 26.5868 16.4839 26.6787 15.9512 26.6787H10V14H15.8175ZM15.4618 19.1443C15.9503 19.1443 16.3503 19.0069 16.6609 18.7775C16.9715 18.5481 17.1051 18.134 17.1051 17.6289C17.1051 17.3531 17.06 17.0773 16.9715 16.8944C16.883 16.7114 16.7494 16.5721 16.5724 16.4347C16.3914 16.3302 16.1968 16.253 15.9945 16.2054C15.7724 16.1589 15.5512 16.1589 15.2839 16.1589H12.7088V19.1452L15.4618 19.1443ZM15.5954 24.5653C15.8618 24.5653 16.1282 24.5189 16.3503 24.4734C16.5724 24.4269 16.7945 24.3359 16.9715 24.1976C17.1517 24.0623 17.3029 23.8904 17.4157 23.6924C17.5042 23.4631 17.5936 23.1873 17.5936 22.866C17.5936 22.2225 17.4157 21.7629 17.0609 21.4416C16.7051 21.1658 16.2166 21.0284 15.6397 21.0284H12.7088V24.5662L15.5954 24.5653ZM24.166 24.5189C24.5211 24.8866 25.0539 25.0704 25.7642 25.0704C26.2527 25.0704 26.6969 24.933 27.0517 24.7036C27.4075 24.4275 27.6296 24.1518 27.7181 23.8763H29.8942C29.5384 24.9785 29.0057 25.7594 28.296 26.2646C27.5845 26.7242 26.7411 27 25.7199 27C25.0666 27.001 24.4189 26.8763 23.8102 26.6323C23.2623 26.4221 22.7738 26.0749 22.389 25.622C21.9758 25.1998 21.6708 24.6788 21.5015 24.1056C21.2793 23.5086 21.19 22.866 21.19 22.1306C21.19 21.4416 21.2793 20.799 21.5015 20.201C21.7145 19.6249 22.0309 19.0951 22.4342 18.6391C22.8333 18.2259 23.3218 17.8591 23.8545 17.6289C24.4475 17.384 25.0809 17.2591 25.7199 17.2611C26.4748 17.2611 27.1411 17.3995 27.7181 17.7208C28.296 18.0421 28.7393 18.4098 29.0942 18.9614C29.4499 19.4665 29.7172 20.0636 29.8942 20.7071C29.9826 21.3496 30.0269 21.9931 29.9826 22.7276H23.5439C23.5439 23.4631 23.8102 24.1521 24.166 24.5198M26.9633 19.6968C26.6527 19.3755 26.1642 19.1916 25.5863 19.1916C25.2475 19.1864 24.9124 19.2651 24.6093 19.421C24.343 19.5594 24.166 19.7432 23.9881 19.9271C23.8236 20.1039 23.7153 20.328 23.6775 20.5696C23.6324 20.7999 23.5881 20.9829 23.5881 21.1667H27.5845C27.496 20.4777 27.2739 20.019 26.9633 19.6968ZM23.0554 14.8729H28.0287V16.1134H23.0563L23.0554 14.8729Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+    
+            </div>
+            <!-- blur -->
+            <!-- <img ngSrc="blur.svg" alt="background" width="483" height="354" class="absolute top-[230px] left-0 max-[1080px]:left-0 max-[1080px]:right-0 max-[1080px]:mx-auto max-sm:top-[80px] z-10" priority="high"> -->
+    
+        
+            <!-- head droit -->
+            <div class="pt-[60px] pl-[70px] babs max-[1080px]:pl-0 max-sm:mx-auto pb-6">
+                <img ngSrc="imageBabs.png" alt="image" width="456" height="498.78" priority="high" class="max-sm:w-[255.98px] max-sm:h-[280px]">
+            </div>
+        </div>
+    
+        <div class="trait h-1 w-full duration-150" [class.traitLight]="mode() == 'claire'"></div>
+    
+        <!-- Outils et methodologies -->
+    
+        <!-- Projets -->
+        <div class="mt-40 text-black max-[1080px]:w-full max-[1080px]:px-[50px] w-[1078px] justify-self-center  max-[1140px]:mt-[100px] overflow-hidden">
+            <div 
+              class=" text-5xl text-[#2B2F38]  flex justify-between items-center font-bold max-sm:text-2xl projets duration-150"
+              [class.text-black]="mode() == 'claire'"
+            >
+                Mon portfolio
+                <div class="flex gap-1 justify-center text-base font-normal text-[#7E452B]">
+                    Voir plus
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12.513L20.789 12.5M14.012 19.5L21 12.5L14.012 5.5" stroke="#7E452B" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="grid grid-cols-[347px_347px_347px] max-[1080px]:grid-cols-[347px] justify-between  max-[1080px]:justify-center mt-[50px]   max-sm:w-[304px] max-sm:gap-8 max-sm:mt-6 max-sm:mx-auto overflow-hidden" >
+                @for (item of Ui(); track item.numb) {
+                    <div [id]="item.idName" class="carteProjets border-[1px] border-[#7E452B] mt-6  w-[347px] h-[474px]  rounded-[42px] mx-auto  hover:shadow-ombre2 duration-500 max-sm:w-[304px] max-sm:h-[442px] overflow-hidden max-sm:rounded-[42px] " [class.bg-zinc-500]="mode()=='claire'">                        
+                        <div class="px-[9px] py-[9px] w-full  ">
+                            <div class="rounded-[33px]  overflow-hidden">
+                                <img [ngSrc]="item.img" [alt]="item.nom" width="390" height="292">
+                            </div>
+                        </div>
+                        <div class="mt-[24px] text-2xl font-bold text-center max-sm:mt-4 max-sm:text-xl max-sm:font-semibold">
+                            {{item.nom}}
+                        </div>
+                        <div class="w-[310px] font-light mx-auto my-[18px] max-sm:text-sm max-sm:font-extralight max-sm:mt-[8px] max-sm:mb-[17.5px] max-sm:w-[235px]">
+                            {{item.description}}
+                        </div>
+                        <div class="flex max-sm:justify-center max-sm:gap-2">
+                            <a [href]="item.dribbble" target="_blank" class="hover:scale-[110%] duration-300 cursor-pointer h-[37px] z-20 mr-[6px] max-sm:mx-0  ml-[121px] ">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#7E452B"/>
+                                <path d="M29 20C29.0015 21.1854 28.768 22.3594 28.3132 23.4541C27.8583 24.5488 27.1911 25.5425 26.3499 26.3778C25.5156 27.2106 24.5254 27.8708 23.4359 28.3207C22.3463 28.7706 21.1788 29.0014 20 29C15.0293 29 11 24.9707 11 20C10.9968 17.6923 11.8832 15.4721 13.475 13.8013C14.3148 12.915 15.3267 12.2094 16.4486 11.7277C17.5706 11.2461 18.779 10.9984 20 11C21.1788 10.9986 22.3463 11.2294 23.4359 11.6793C24.5254 12.1292 25.5156 12.7894 26.3499 13.6222C27.1911 14.4575 27.8583 15.4512 28.3132 16.5459C28.768 17.6406 29.0015 18.8146 29 20Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28.9999 20C27.6868 20 24.0643 19.505 20.8221 20.9283C17.3 22.475 14.7498 24.8744 13.6383 26.3661" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.625 11.6544C18.0335 12.9544 21.107 16.2642 22.25 19.5501C23.393 22.8359 23.816 26.876 24.077 28.0258" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.0695 18.875C12.7696 18.9776 17.27 19.0698 20.15 17.84C23.03 16.6101 25.5081 14.348 26.3582 13.6302M11.6752 23.4258C12.4683 25.3454 13.8986 26.9331 15.7252 27.9218" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11 20C10.9968 17.6923 11.8832 15.4721 13.475 13.8013C14.3148 12.915 15.3267 12.2094 16.4486 11.7277C17.5706 11.2461 18.779 10.9984 20 11M23.6 11.7488C24.6251 12.1969 25.5577 12.8322 26.3499 13.6222C27.1911 14.4575 27.8583 15.4512 28.3132 16.5459C28.768 17.6406 29.0015 18.8146 29 20C29 21.1079 28.7997 22.1694 28.433 23.15M20 29C21.1788 29.0014 22.3463 28.7706 23.4359 28.3207C24.5254 27.8708 25.5156 27.2106 26.3499 26.3778" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a [href]="item.behance" target="_blank" class="z-30 hover:scale-[110%] duration-300 cursor-pointer  mr-[121px] max-sm:mx-0">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#7E452B"/>
+                                <path d="M15.8175 14C16.3945 14 16.9281 14.0464 17.4157 14.1839C17.9042 14.2758 18.3042 14.4596 18.6591 14.689C19.0148 14.9187 19.2812 15.2403 19.4581 15.6538C19.636 16.067 19.7254 16.5731 19.7254 17.1237C19.7254 17.7672 19.5918 18.3179 19.2812 18.7311C19.0148 19.1452 18.5706 19.512 18.0378 19.7878C18.7927 20.0181 19.3697 20.4313 19.7254 20.9819C20.0812 21.5326 20.3024 22.2225 20.3024 23.0034C20.3024 23.6469 20.1687 24.1976 19.9466 24.6572C19.7254 25.1169 19.3697 25.5301 18.9697 25.8059C18.535 26.1011 18.0547 26.3184 17.5494 26.4484C17.0166 26.5868 16.4839 26.6787 15.9512 26.6787H10V14H15.8175ZM15.4618 19.1443C15.9503 19.1443 16.3503 19.0069 16.6609 18.7775C16.9715 18.5481 17.1051 18.134 17.1051 17.6289C17.1051 17.3531 17.06 17.0773 16.9715 16.8944C16.883 16.7114 16.7494 16.5721 16.5724 16.4347C16.3914 16.3302 16.1968 16.253 15.9945 16.2054C15.7724 16.1589 15.5512 16.1589 15.2839 16.1589H12.7088V19.1452L15.4618 19.1443ZM15.5954 24.5653C15.8618 24.5653 16.1282 24.5189 16.3503 24.4734C16.5724 24.4269 16.7945 24.3359 16.9715 24.1976C17.1517 24.0623 17.3029 23.8904 17.4157 23.6924C17.5042 23.4631 17.5936 23.1873 17.5936 22.866C17.5936 22.2225 17.4157 21.7629 17.0609 21.4416C16.7051 21.1658 16.2166 21.0284 15.6397 21.0284H12.7088V24.5662L15.5954 24.5653ZM24.166 24.5189C24.5211 24.8866 25.0539 25.0704 25.7642 25.0704C26.2527 25.0704 26.6969 24.933 27.0517 24.7036C27.4075 24.4275 27.6296 24.1518 27.7181 23.8763H29.8942C29.5384 24.9785 29.0057 25.7594 28.296 26.2646C27.5845 26.7242 26.7411 27 25.7199 27C25.0666 27.001 24.4189 26.8763 23.8102 26.6323C23.2623 26.4221 22.7738 26.0749 22.389 25.622C21.9758 25.1998 21.6708 24.6788 21.5015 24.1056C21.2793 23.5086 21.19 22.866 21.19 22.1306C21.19 21.4416 21.2793 20.799 21.5015 20.201C21.7145 19.6249 22.0309 19.0951 22.4342 18.6391C22.8333 18.2259 23.3218 17.8591 23.8545 17.6289C24.4475 17.384 25.0809 17.2591 25.7199 17.2611C26.4748 17.2611 27.1411 17.3995 27.7181 17.7208C28.296 18.0421 28.7393 18.4098 29.0942 18.9614C29.4499 19.4665 29.7172 20.0636 29.8942 20.7071C29.9826 21.3496 30.0269 21.9931 29.9826 22.7276H23.5439C23.5439 23.4631 23.8102 24.1521 24.166 24.5198M26.9633 19.6968C26.6527 19.3755 26.1642 19.1916 25.5863 19.1916C25.2475 19.1864 24.9124 19.2651 24.6093 19.421C24.343 19.5594 24.166 19.7432 23.9881 19.9271C23.8236 20.1039 23.7153 20.328 23.6775 20.5696C23.6324 20.7999 23.5881 20.9829 23.5881 21.1667H27.5845C27.496 20.4777 27.2739 20.019 26.9633 19.6968ZM23.0554 14.8729H28.0287V16.1134H23.0563L23.0554 14.8729Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class=" w-[44px] h-[41px] rounded-bl-[42px] rounded-tr-[42px] bg-[#7E452B]"></div>
+                            <div class="w-[44px] h-[41px] rounded-tl-[42px] rounded-br-[42px] bg-[#7E452B]"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        
+        <!-- contact -->
+        <div 
+          id="contact" 
+          class= "mt-[200px] font-bold text-6xl max-sm:text-3xl max-sm:mt-20" 
+          [class.text-black]="mode() == 'claire'"
+          [class.text-[#2B2F38]]="mode() != 'claire'"
+        >
+            <div class="text-center">
+                Contactez moi
+            </div>
+            <div class="flex mt-20 justify-center gap-10 animate-bounce max-sm:gap-6 max-sm:mt-14">
+                <a href="https://wa.me/+221773782956" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <svg width="94" height="94" class="max-sm:w-[52px] max-sm:h-[52px]"  viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.2117 2.9375C25.5196 2.9375 7.14182 21.3152 7.14182 44.0074C7.14182 53.1504 10.1344 61.5957 15.1832 68.4254L4.71838 91.0625L7.45393 89.7957L28.5305 80.0652C34.3688 83.2598 41.0699 85.0773 48.1934 85.0773C70.8672 85.0773 89.2633 66.6996 89.2633 44.0074C89.2817 21.3152 70.8856 2.9375 48.2117 2.9375ZM70.1145 61.5406C69.8758 62.6789 69.3801 63.7621 68.6641 64.7168C67.7828 65.8918 66.6446 66.773 65.341 67.3238C64.0375 67.8746 62.6055 68.0949 61.1735 67.9113C57.3364 67.4523 53.6278 66.2223 50.3047 64.2395C46.4676 61.9629 41.3086 58.4195 37.4164 53.3523C33.2672 48.4871 31.009 42.7957 29.577 38.5547C28.3469 34.9012 27.9063 31.009 28.2551 27.1719C28.3836 25.7215 28.8977 24.3629 29.7055 23.2063C30.5133 22.0496 31.6332 21.1133 32.9551 20.5074C34.0383 19.9934 35.2133 19.7547 36.3699 19.7547C38.0223 19.7547 40.0418 19.7363 41.4371 20.7277C43.6035 22.2516 44.5215 25.2625 44.5215 27.9062C44.5215 28.1449 44.5032 28.402 44.4848 28.6406C44.3563 30.091 44.2278 31.3578 43.4016 32.5145C42.5938 33.6711 41.1067 34.6809 39.7848 35.3051C40.7946 40.7395 42.5387 44.7785 44.9438 47.3855C45.9719 48.8176 47.3672 50.1762 49.1481 51.443C50.9289 52.7098 53.077 53.8664 55.6289 54.9313C56.5102 53.7746 57.8137 52.5262 59.1172 51.9754C60.4024 51.4246 61.6875 51.5531 63.1196 51.7367C63.3582 51.7734 63.6153 51.8102 63.8539 51.8652C66.4242 52.416 69.1781 53.9398 70.2246 56.3816C70.8856 57.9605 70.4633 59.925 70.1145 61.5406Z" fill="#7E452B"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/babs_990?igsh=MWc1Ymo0Z3ZvMHZrNw==" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
+                    <svg width="94" height="94" class="max-sm:w-[52px] max-sm:h-[52px]"  viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M60.8666 25.6917H33.5054C29.1359 25.6917 25.5852 29.2424 25.5852 33.6119V60.9688C25.5852 65.3384 29.1357 68.894 33.5054 68.894H60.8668C65.2314 68.894 68.7872 65.3384 68.7872 60.9688V33.6119C68.787 29.2422 65.2314 25.6917 60.8666 25.6917ZM47.1835 61.5132C39.3432 61.5132 32.9611 55.1309 32.9611 47.2905C32.9611 39.4502 39.3434 33.0681 47.1835 33.0681C55.0289 33.0681 61.406 39.4502 61.406 47.2905C61.406 55.1309 55.0239 61.5132 47.1835 61.5132ZM61.8655 36.0089C60.0077 36.0089 58.4997 34.5014 58.4997 32.6436C58.4997 30.7902 60.0077 29.2778 61.8655 29.2778C63.7182 29.2778 65.2314 30.7902 65.2314 32.6436C65.2314 34.5014 63.7182 36.0089 61.8655 36.0089Z" fill="#7E452B"/>
+                    <path d="M47.1836 39.0807C42.6591 39.0807 38.9736 42.7612 38.9736 47.2905C38.9736 51.8199 42.6591 55.5054 47.1836 55.5054C51.713 55.5054 55.3985 51.8199 55.3985 47.2905C55.3985 42.766 51.713 39.0807 47.1836 39.0807Z" fill="#7E452B"/>
+                    <path d="M47.1836 1.26721C21.8348 1.26721 1.28516 21.8169 1.28516 47.1657C1.28516 72.5144 21.8348 93.0641 47.1836 93.0641C72.5324 93.0641 93.082 72.5144 93.082 47.1657C93.082 21.817 72.5324 1.26721 47.1836 1.26721ZM74.7946 60.9688C74.7946 68.6542 68.5475 74.9015 60.8668 74.9015H33.5055C25.825 74.9015 19.5727 68.6544 19.5727 60.9688V33.6118C19.5727 25.9319 25.825 19.6796 33.5055 19.6796H60.8668C68.5475 19.6796 74.7946 25.9319 74.7946 33.6118V60.9688Z" fill="#7E452B"/>
+                    </svg>
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/serigne-khalifa-ababacar-sy-nguirane-675676273?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoysBPWGZSXiniZxeoiBenA%3D%3D"
+                  class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]"
+                  >
+                  <svg width="94" height="94" class="max-sm:w-[52px] max-sm:h-[52px]"  viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_48_319)">
+                  <path d="M52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM52.4479 41.0931H52.5191V40.9812L52.4479 41.0931ZM47.8198 0C38.6322 0 29.6509 2.72445 22.0117 7.82882C14.3724 12.9332 8.41837 20.1882 4.90241 28.6765C1.38646 37.1648 0.466527 46.505 2.25894 55.5161C4.05136 64.5272 8.47563 72.8044 14.9723 79.301C21.4689 85.7977 29.7461 90.2219 38.7572 92.0144C47.7683 93.8068 57.1085 92.8868 65.5968 89.3709C74.0851 85.8549 81.3401 79.9009 86.4445 72.2616C91.5489 64.6224 94.2733 55.6411 94.2733 46.4535C94.2598 34.1374 89.3613 22.3296 80.6525 13.6208C71.9437 4.91198 60.1359 0.0134617 47.8198 0ZM36.2039 67.3662C36.2012 67.5721 36.1175 67.7688 35.971 67.9134C35.8244 68.0581 35.6267 68.1392 35.4207 68.1392H26.4697C26.2647 68.1392 26.0681 68.0578 25.9231 67.9128C25.7781 67.7678 25.6967 67.5712 25.6967 67.3662V37.2889C25.6954 37.1865 25.7144 37.0849 25.7526 36.99C25.7908 36.895 25.8476 36.8086 25.9195 36.7357C25.9914 36.6628 26.0771 36.605 26.1715 36.5655C26.266 36.526 26.3674 36.5057 26.4697 36.5057H35.4207C35.5236 36.5057 35.6254 36.526 35.7204 36.5653C35.8155 36.6047 35.9018 36.6624 35.9745 36.7351C36.0473 36.8078 36.1049 36.8942 36.1443 36.9892C36.1837 37.0842 36.2039 37.1861 36.2039 37.2889V67.3662ZM30.6299 32.4879C29.5174 32.4879 28.4299 32.158 27.5049 31.54C26.5799 30.9219 25.8589 30.0434 25.4332 29.0156C25.0075 27.9878 24.8961 26.8568 25.1131 25.7657C25.3302 24.6746 25.8659 23.6723 26.6525 22.8857C27.4392 22.099 28.4414 21.5633 29.5326 21.3463C30.6237 21.1292 31.7546 21.2406 32.7825 21.6664C33.8103 22.0921 34.6887 22.8131 35.3068 23.7381C35.9249 24.6631 36.2548 25.7506 36.2548 26.8631C36.2561 27.6021 36.1115 28.3342 35.8293 29.0172C35.5471 29.7002 35.1329 30.3209 34.6103 30.8434C34.0877 31.366 33.4671 31.7803 32.784 32.0625C32.101 32.3447 31.369 32.4893 30.6299 32.4879ZM74.0828 67.3662C74.0801 67.5721 73.9964 67.7688 73.8498 67.9134C73.7032 68.0581 73.5055 68.1392 73.2996 68.1392H64.3486C64.2471 68.1392 64.1466 68.1192 64.0528 68.0804C63.959 68.0415 63.8738 67.9846 63.802 67.9128C63.7302 67.841 63.6733 67.7558 63.6344 67.662C63.5956 67.5682 63.5756 67.4677 63.5756 67.3662V51.2036C63.5756 46.9519 62.06 44.0835 58.2558 44.0835C57.0704 44.0901 55.9161 44.4632 54.951 45.1515C53.9859 45.8398 53.2572 46.8097 52.8649 47.9284C52.5968 48.7551 52.4796 49.6233 52.5191 50.4916V67.3662C52.5191 67.5739 52.4366 67.7731 52.2897 67.92C52.1428 68.0669 51.9436 68.1494 51.7359 68.1494H42.7849C42.6825 68.1494 42.5812 68.1291 42.4867 68.0896C42.3923 68.0501 42.3066 67.9923 42.2347 67.9194C42.1627 67.8465 42.106 67.7601 42.0678 67.6651C42.0295 67.5702 42.0105 67.4686 42.0119 67.3662C42.0119 63.0738 42.1238 42.2323 42.0119 37.3296C42.0105 37.2272 42.0295 37.1256 42.0678 37.0306C42.106 36.9357 42.1627 36.8493 42.2347 36.7764C42.3066 36.7035 42.3923 36.6457 42.4867 36.6062C42.5812 36.5667 42.6825 36.5464 42.7849 36.5464H51.7155C51.8188 36.545 51.9212 36.5643 52.0169 36.6032C52.1125 36.6421 52.1994 36.6997 52.2724 36.7727C52.3454 36.8457 52.403 36.9326 52.4419 37.0283C52.4808 37.1239 52.5001 37.2264 52.4987 37.3296V41.0219C53.4502 39.3703 54.8358 38.0108 56.5052 37.0909C58.1746 36.171 60.064 35.7259 61.9685 35.8039C68.8749 35.8039 74.0624 40.32 74.0624 50.044L74.0828 67.3662ZM52.5191 41.1236V41.0117L52.4479 41.1236H52.5191ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236ZM52.4479 41.1236H52.5191V41.0117L52.4479 41.1236Z" fill="#7E452B"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_48_319">
+                  <rect width="94" height="94" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                </a>
+            </div>
+        </div>
+
+        <app-footer></app-footer>
+    }
+
+</div>

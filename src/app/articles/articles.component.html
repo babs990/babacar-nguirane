@@ -1,0 +1,71 @@
+<div class="bg-[#1D2025] duration-150 text-white" [class.bg-[#d4d4d4]]="mode() == 'claire'">
+    <app-nav [nav]="'articles'" [src]="src" (mode)="modeDark($event)"></app-nav>
+
+    <div class="font-bold text-6xl text-center mt-32 articles max-sm:text-3xl max-sm:mt-16" [class.text-black]="mode() == 'claire'">
+        Articles
+    </div>
+    @if (skill() == 'dev'){
+        <div 
+          class="text-2xl font-extralight w-[780px] mx-auto mt-10 description max-sm:text-base max-sm:w-full max-sm:px-10 max-sm:mt-5" 
+          [class.text-black]="mode() == 'claire'"
+        >
+            J’aime partager des contenues en rapport avec le développement logiciel pour inspirer la communauté et participer à l'essor  de nouveaux développeurs .    
+        </div>
+        <div 
+          class="w-[739px] rounded-[33px]  backdrop-blur-3xl flex justify-center gap-20 py-9 mx-auto mt-20 text-white max-[900px]:w-[600px] max-[900px]:gap-10 max-sm:grid max-sm:w-[296px] max-sm:py-5 max-sm:mt-16 overflow-hidden article"
+          [class.bg-[#1d20256c]]="mode() == 'claire'"
+          [class.bg-[#ffffff27]]="mode() != 'claire'"
+        >
+            <div class="w-[277px] h-[277px] bg-[#1D2025] rounded-full p-[18px] max-sm:w-[91px] max-sm:h-[91px] max-sm:p-[8px] max-sm:mx-auto imgArticle">
+                <img ngSrc="angularArticle.png" alt="angular" width="237" height="248">
+            </div>
+            <div class="w-[294px] max-sm:w-[262px] descArticle">
+                <div class="font-semibold text-3xl max-sm:text-xl">
+                    C’est quoi Angular?
+                </div>
+                <div class="text-base my-10 max-sm:text-xs max-sm:mt-5 max-sm:mb-8">
+                    Dans cet article j’explique de manière claire c’est quoi Angular ainsi que les avantages et les inconvénients de ce Framework.
+                </div>
+                <div 
+                  class=" w-[220px]  h-[50px] text-2xl text-orange-500 border-[1px] border-orange-500 font-semibold bg-[#1D2025] rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm flex justify-center gap-3 mx-auto max-sm:items-center max-sm:pt-[1px]  cursor-pointer pt-2 animate-bounce hover:border-white duration-300 hover:text-white"
+                  routerLink="/articles/angular"
+                >
+                    Lire l’article
+                </div>    
+            </div>
+        </div>
+        
+    }
+    @if (skill() == 'ux'){
+        <div 
+          class="text-2xl font-extralight w-[780px] mx-auto mt-10 description max-sm:text-base max-sm:w-full max-sm:px-10 max-sm:mt-5" 
+          [class.text-black]="mode() == 'claire'"
+        >
+          J’aime partager des contenues en rapport avec l'expérience utilisateur pour inspirer la communauté et participer à l'essor  de nouveaux développeurs .    
+        </div>
+        <div 
+          class="w-[739px] rounded-[33px]  backdrop-blur-3xl flex justify-center gap-20 py-9 mx-auto mt-20 text-white max-[900px]:w-[600px] max-[900px]:gap-10 max-sm:grid max-sm:w-[296px] max-sm:py-5 max-sm:mt-16 overflow-hidden article"
+          [class.bg-[#1d20256c]]="mode() == 'claire'"
+          [class.bg-[#ffffff27]]="mode() != 'claire'"
+        >
+            <div class="w-[277px] h-[277px] bg-[#1D2025] rounded-full p-[18px] max-sm:w-[91px] max-sm:h-[91px] max-sm:p-[8px] max-sm:mx-auto imgArticle">
+                <img ngSrc="ux.png" alt="angular" width="237" height="248">
+            </div>
+            <div class="w-[294px] max-sm:w-[262px] descArticle">
+                <div class="font-semibold text-3xl max-sm:text-xl">
+                    C’est quoi le UX?
+                </div>
+                <div class="text-base mt-10 mb-12 max-sm:text-xs max-sm:mt-5 max-sm:mb-8">
+                    Dans cette article j’explique de manière claire c’est quoi l’expérience utilisateur ainsi que les avantages  de ce dernier.
+                </div>
+                <div 
+                  class=" w-[220px]  h-[50px] text-2xl text-orange-500 border-[1px] border-orange-500 font-semibold bg-[#1D2025] rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm flex justify-center gap-3 mx-auto max-sm:items-center max-sm:pt-[1px]  cursor-pointer pt-2 animate-bounce hover:border-white duration-300 hover:text-white"
+                  routerLink="/articles/ux"
+                >
+                  Lire l’article
+                </div>    
+            </div>
+        </div>
+    }
+    <app-footer></app-footer>
+</div>
