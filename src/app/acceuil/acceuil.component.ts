@@ -22,9 +22,11 @@ export class AcceuilComponent implements AfterViewInit,OnInit{
   readonly projets = signal(projets)
   readonly design = signal(projetsUi)
   src = localStorage.getItem('src') || ''
-  mode = signal(localStorage.getItem('mode') || 'nuit')
+  mode = signal(localStorage.getItem('mode') || 'claire')
   skill = signal(localStorage.getItem('skill'))
   outils = signal(outils)
+  svg = signal('')
+  imageBabs=''
   techno = computed(()=>{
     return this.outils().filter((item)=> item.type == 'techno')
   })
@@ -48,8 +50,7 @@ export class AcceuilComponent implements AfterViewInit,OnInit{
   bgStyle: SafeStyle;
   
   constructor(private sanitizer: DomSanitizer){
-    const svg = `
-<svg width="1280" height="539" viewBox="0 0 1280 539" fill="none" xmlns="http://www.w3.org/2000/svg">
+      this.svg.set(`      <svg width="1280" height="539" viewBox="0 0 1280 539" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line y1="0.5" x2="1280" y2="0.5" stroke="#7E452B" stroke-opacity="0.05"/>
 <line y1="108.1" x2="1280" y2="108.1" stroke="#7E452B" stroke-opacity="0.05"/>
 <line y1="215.7" x2="1280" y2="215.7" stroke="#7E452B" stroke-opacity="0.05"/>
@@ -74,18 +75,20 @@ export class AcceuilComponent implements AfterViewInit,OnInit{
 <line x1="1025.7" y1="1" x2="1025.7" y2="394" stroke="#7E452B" stroke-opacity="0.05"/>
 <line x1="947.1" y1="1" x2="947.1" y2="394" stroke="#7E452B" stroke-opacity="0.05"/>
 <line x1="868.5" y1="1" x2="868.5" y2="394" stroke="#7E452B" stroke-opacity="0.05"/>
-<foreignObject x="147" y="-20" width="1070" height="572"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(17.5px);clip-path:url(#bgblur_0_41_118_clip_path);height:100%;width:100%"></div></foreignObject><ellipse data-figma-bg-blur-radius="35" cx="682" cy="266" rx="500" ry="251" fill="#FCFBFC"/>
+<foreignObject x="147" y="-20" width="1070" height="572"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(17.5px);clip-path:url(#bgblur_0_108_3_clip_path);height:100%;width:100%"></div></foreignObject><ellipse data-figma-bg-blur-radius="35" cx="682" cy="266" rx="500" ry="251"  [class.bg-[#2B2F38]]="mode() != 'claire'" fill="#2B2F38"/>
 <defs>
-<clipPath id="bgblur_0_41_118_clip_path" transform="translate(-147 20)"><ellipse cx="682" cy="266" rx="500" ry="251"/>
+<clipPath id="bgblur_0_108_3_clip_path" transform="translate(-147 20)"><ellipse cx="682" cy="266" rx="500" ry="251"/>
 </clipPath></defs>
-</svg>
+</svg>`)
 
-
-    `;
-    const encoded = encodeURIComponent(svg);
+    const encoded = encodeURIComponent(this.svg());
     const dataUrl = `url("data:image/svg+xml;utf8,${encoded}")`;
     this.bgStyle = this.sanitizer.bypassSecurityTrustStyle(dataUrl);
-
+    if(this.mode() == 'claire'){
+      this.imageBabs = 'imageBabs.png'
+    }else{
+      this.imageBabs = 'imageBabs2.png'
+    }
   }
 
   ngOnInit(): void {

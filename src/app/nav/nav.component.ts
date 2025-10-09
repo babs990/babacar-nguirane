@@ -16,7 +16,7 @@ export class NavComponent implements OnInit {
   source:string =''
   source2 : string =''
   skill = signal(localStorage.getItem('skill'))
-  
+  ambiance = signal(localStorage.getItem('mode') || 'claire')
 
   @Input() src = 'sun.svg'
   @Output() mode: EventEmitter<string> = new EventEmitter()
@@ -37,6 +37,7 @@ export class NavComponent implements OnInit {
       localStorage.setItem('src','nocturne.svg')
       localStorage.setItem('mode','nuit')
     }
+
   }
 
   ngOnInit(): void {
@@ -72,7 +73,7 @@ export class NavComponent implements OnInit {
   }
 
   apropos(){
-    this.router.navigateByUrl('/apropos')
+    this.router.navigateByUrl('/aproposs')
   }
 
   revealApropos(){
