@@ -1,3 +1,8 @@
+.hero {
+    background-image: url('/public/bg.svg');
+  background-size: cover;
+}
+
 .gauche{
     background-image: repeating-linear-gradient(180deg, #f9731647, #f9731647 12px, transparent 12px, transparent 16px);
     background-position: right top;

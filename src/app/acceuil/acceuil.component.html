@@ -230,11 +230,11 @@
             <!-- head gauche -->
             <div 
               class=" duration-150 leading-[160%]  w-[530px]  gauche pt-[110px] max-[1080px]:pt-[60px] max-sm:w-full max-sm:pt-24 max-sm:px-7 z-50"
-              [class.text-[#2B2F38]]="mode() == 'claire'"
+              [class.text-[#000]]="mode() == 'claire'"
               [class.text-[#fff]]="mode() != 'claire'"
               [class.gaucheLight]="mode() == 'claire'"
             >
-                <div class="text-5xl font-bold leading-[160%] overflow-hidden max-sm:text-3xl " [class.text-[#fff]]="mode() != 'claire'">
+                <div class="text-[#2B2F38] text-5xl font-bold leading-[160%] overflow-hidden max-sm:text-3xl " [class.text-[#fff]]="mode() != 'claire'">
                     <div class="">
                         Salut! Je suis Babacar Nguirane
                     </div>
@@ -287,9 +287,9 @@
             <!-- head droit -->
             <div class="pt-[60px] pl-[70px] babs max-[1080px]:pl-0 max-sm:mx-auto pb-6">
                 @if(mode() == 'claire'){
-                    <img src="imageBabs.png" alt="image" width="456" height="498.78" priority="high" class="max-sm:w-[255.98px] max-sm:h-[280px]">
+                    <img ngSrc="imageBabs.png" alt="image" width="456" height="498.78" priority="high" class="max-sm:w-[255.98px] max-sm:h-[280px]">
                 }@else{
-                    <img src="imageBabs2.png" alt="image" width="456" height="498.78" priority="high" class="max-sm:w-[255.98px] max-sm:h-[280px]">
+                    <img ngSrc="imageBabs2.png" alt="image" width="456" height="498.78" priority="high" class="max-sm:w-[255.98px] max-sm:h-[280px]">
                 }
             </div>
         </div>

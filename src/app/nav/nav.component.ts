@@ -73,7 +73,7 @@ export class NavComponent implements OnInit {
   }
 
   apropos(){
-    this.router.navigateByUrl('/aproposs')
+    this.router.navigateByUrl('/apropos')
   }
 
   revealApropos(){

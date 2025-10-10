@@ -1,4 +1,6 @@
-<div class="bg-[#1D2025] duration-150 " [class.bg-[#d4d4d4]]="mode() == 'claire'">
+<div class="bg-[#1D2025] duration-150 leading-[160%]" 
+  [class.bg-[#2B2F38]]="mode() != 'claire'"
+  [class.bg-[#FCFBFC]]="mode() == 'claire'">
 
     <!-- dev mode -->
     @if (skill() == 'dev'){
@@ -115,140 +117,108 @@
         <app-nav [nav]="'apropos'" [src]="src" (mode)="modeDark($event)"></app-nav>
     
         <!-- header -->
-        <div class="flex justify-center gap-2 w-full max-[1080px]:grid overflow-hidden">
-            <!-- header gauche -->
-            <div  
-              class="pt-28 gauche pr-20 max-[1080px]:mx-auto max-[1080px]:pr-0 max-sm:pt-14 max-sm:w-[244px] duration-150"
-              [class.gaucheLight]="mode() == 'claire'"
-            >
-                <img id="img" ngSrc="imageBabs2.png" alt="image" width="434" height="434" priority="high" class="max-sm:w-[244px] max-sm:h-[244px]">
-            </div>
-    
+        <div class="hero py-[120px] flex justify-center gap-2 w-full max-[1080px]:grid max-[1080px]:px-[50px] max-sm:py-[60px] max-sm:px-[20px] overflow-hidden">
             <!-- header droit -->
             <div 
-              id="text" 
-              class="text-white duration-150 w-[510px] pt-20 ml-6 pb-5 max-[1080px]:ml-0 max-[1080px]:w-full max-[1080px]:px-5 max-sm:pt-10 max-sm:px-4"
-              [class.text-black]="mode() == 'claire'"
+              id="" 
+              class=" text-5xl font-bold duration-150 ml-6  max-[1080px]:ml-0 max-[1080px]:w-full "
+              [class.text-[#2B2F38]]="mode() == 'claire'"
+              [class.text-[#fff]]="mode() != 'claire'"
             >
-                <div class="font-bold text-5xl leading-tight max-sm:text-2xl" [class.text-black]="mode() == 'claire'">
+                <div class="font-bold text-[40px] leading-tight max-sm:text-2xl text-center" [class.text-[#2B2F38]]="mode() == 'claire'">
                     Serigne khalifa Ababacar Sy Nguirane
                 </div>
-                <div class="text-xl font-light mt-5 mb-8 max-sm:text-sm" [class.text-black]="mode() == 'claire'">
-                    En tant que développeur front-end et UX designer, je suis passionné par la création d’interfaces web et mobile modernes.<br><br>J'aime apprendre de nouvelles choses et partager mes connaissances avec les autres. Je partage régulièrement les avancées sur mes projets à travers mes réseaux.<br><br>Je suis toujours à la recherche de nouvelles opportunités pour continuer ma progression et enrichir mon expérience.  
+                <div class="text-base font-normal w-[710px] max-[1080px]:w-full mt-5 mb-8 max-sm:my-5 max-sm:text-sm" [class.text-black]="mode() == 'claire'">
+                    Je suis Product UX/UI designer. J’aide les entreprises a concevoir des technologies modernes et centré sur l’utilisateur. Grâce à mes compétences en analyse et en stratégie, j’ai eu l’opportunité de contribuer à des projets d’envergure, notamment la plateforme de l’Assemblée nationale. 
                 </div>
                 <a href="cvux.pdf">
                     <div 
-                      class=" w-[220px] mx-auto pt-2 h-[50px] text-2xl text-[#1D2025] font-semibold bg-orange-500 rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm max-sm:pt-1 cursor-pointer hover:scale-[105%] duration-500 animate-bounce z-20"
+                      class=" px-[25px]  h-[50px] content-center text-base text-[#fff] font-medium bg-[#7E452B] rounded-full text-center  max-sm:text-sm max-sm:pt-1 cursor-pointer hover:scale-[105%] duration-500 w-fit justify-self-center"
                     >
-                      mon cv
+                        mon cv 
                     </div>
+
                 </a>
     
-              <!-- blur -->
-              <img ngSrc="blur.svg" alt="background" width="226" height="116" class="absolute top-[150px] left-auto right-auto max-[1080px]:left-0 max-[1080px]:right-0 max-[1080px]:top-[100px] max-[1080px]:mx-auto max-sm:top-[50px] max-sm: z-0" priority="high">
+              
             </div>
     
         </div>
         <div class="trait w-full h-[1px] duration-150" [class.traitLight]="mode() == 'claire'"></div>
     
-        <!-- Contact -->
-        <div id="contact" class="text-white mt-52 font-bold text-6xl max-sm:text-3xl max-sm:mt-20" >
-            <div class="text-center" [class.text-black]="mode() == 'claire'">
-                Contactez moi
-            </div>
-            <div class="flex mt-20 justify-center gap-10 animate-bounce max-sm:gap-6 max-sm:mt-14">
-                <a href="https://wa.me/+221773782956" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
-                    <img ngSrc="whats-app.svg" alt="whatsapp" width="94" height="94">
-                </a>
-                <a href="https://www.instagram.com/babs_990?igsh=MWc1Ymo0Z3ZvMHZrNw==" class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]">
-                    <img ngSrc="instagram.svg" alt="instagram" width="94" height="94">
-                </a>
-                <a 
-                  href="https://www.linkedin.com/in/serigne-khalifa-ababacar-sy-nguirane-675676273?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoysBPWGZSXiniZxeoiBenA%3D%3D"
-                  class="cursor-pointer hover:scale-[110%] duration-500 max-sm:w-[52px] max-sm:h-[52px]"
-                >
-                    <img ngSrc="LinkedIn.svg" alt="linkedIn" width="94" height="94">
-                </a>
-            </div>
-        </div>
     
-        <!-- Histoire -->
-        <div class="mt-32 w-full text-white max-sm:mt-24" >
-            <div class="w-[333px] mx-auto max-sm:w-[177px] img">
-                <img ngSrc="imageBabs3.png" alt="image" width="333" height="333">
-            </div>
-            <div class="text-5xl font-bold text-center mt-12 max-sm:text-2xl max-sm:mt-6" [class.text-black]="mode() == 'claire'">
-                Mon histoire
-            </div>
-            <div 
-              class="text-base font-light w-[1015px] mx-auto mt-12 leading-relaxed max-[1080px]:w-auto max-[1080px]:px-10 max-sm:text-sm max-sm:mt-6 histoire"
-              [class.text-black]="mode() == 'claire'"
-            >
-                Après mon baccalauréat en série scientifique, on m'a orienté dans une université publique ( UNCHK ) dans la filière mathématiques et informatique. Fraîchement diplômé et avec peu de connaissance dans le domaine du numérique, les premières années ont été très fastidieux. A ce stade précis de ma carrière deux questions étroitement liées me tourmentent: Sur quel domaine je dois me spécialiser dans l'informatique ainsi que quel est le but précis de ma carrière?<br><br>Un événement anodin m'a permis de répondre à ces questions. Etant membre dans une association familiale, j'ai été chargé de confectionner le design de la carte de visite de l'association. Après avoir terminé la conception j'ai reçu énormément de compliments pour mon travail. C'est ainsi que j'ai compris que ma réelle passion réside dans la conception et le développement d'interfaces attractives, intuitives et modernes.<br><br>Depuis lors je travaille d'arrache pieds pour booster mes connaissances et compétences dans ce domaine si passionnant. Aujourd'hui je suis plus que jamais déterminé à montrer ma valeur et réaliser mon rêve qui est de devenir un UX UI Designer senior.
-            </div>
-        </div>
+        <!-- Philosophie -->
+        <div class="mt-[100px] flex justify-between w-[1078px] max-[1280px]:w-full max-[1280px]:gap-3 max-[1280px]:px-[50px] mx-auto max-[1080px]:flex-col max-[1080px]:items-center max-[1080px]:gap-[40px] max-sm:px-[20px] max-sm:mt-[50px]">
+            <svg class="max-sm:w-[200px] max-sm:h-[200px]" width="346" height="346" viewBox="0 0 346 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+            @if (mode() == 'claire') {
+            <rect x="4.325" y="4.325" width="337.35" height="337.35" rx="168.675" stroke="#7E452B" stroke-width="8.65"/>
+    <path d="M134.683 125.864C134.638 126.179 134.548 127.193 134.413 128.905C134.323 130.617 134.188 132.78 134.007 135.393C133.872 137.961 133.692 140.844 133.467 144.043C133.287 147.196 133.084 150.372 132.859 153.571C132.678 156.77 132.498 159.856 132.318 162.829C132.183 165.758 132.07 168.303 131.98 170.466C132.566 169.474 133.332 168.483 134.278 167.492C135.224 166.501 136.35 165.623 137.657 164.857C139.008 164.046 140.54 163.392 142.252 162.897C144.009 162.401 145.969 162.154 148.131 162.154C150.879 162.154 153.605 162.649 156.308 163.64C159.056 164.631 161.512 166.163 163.674 168.236C165.837 170.263 167.594 172.876 168.945 176.075C170.297 179.228 170.973 182.99 170.973 187.36C170.973 191.009 170.477 194.321 169.486 197.294C168.54 200.268 167.278 202.926 165.702 205.268C164.17 207.566 162.413 209.571 160.43 211.283C158.448 212.995 156.443 214.414 154.416 215.54C152.389 216.667 150.429 217.5 148.537 218.041C146.645 218.581 145 218.852 143.604 218.852C142.162 218.852 140.81 218.716 139.549 218.446C138.332 218.176 137.251 217.838 136.305 217.432C135.404 217.027 134.683 216.576 134.143 216.081C133.647 215.585 133.377 215.09 133.332 214.594C133.242 213.558 133.219 212.454 133.264 211.283C133.354 210.111 133.782 209.143 134.548 208.377C135.269 207.656 135.877 207.228 136.373 207.093C136.913 206.958 137.431 207.206 137.927 207.836C138.423 208.467 138.715 209.165 138.805 209.931C138.941 210.697 138.873 211.283 138.603 211.688C138.468 211.914 138.468 212.116 138.603 212.296C138.783 212.432 139.031 212.567 139.346 212.702C139.707 212.792 140.089 212.882 140.495 212.972C140.945 213.017 141.373 213.04 141.779 213.04C143.311 213.04 145.045 212.432 146.982 211.215C148.965 209.954 150.812 208.219 152.524 206.012C154.236 203.804 155.677 201.214 156.849 198.24C158.02 195.267 158.583 192.046 158.538 188.577C158.493 185.828 158.155 183.441 157.525 181.413C156.894 179.341 156.105 177.606 155.159 176.21C154.213 174.768 153.132 173.597 151.916 172.696C150.744 171.795 149.573 171.119 148.402 170.668C147.275 170.173 146.194 169.857 145.158 169.722C144.167 169.587 143.356 169.542 142.725 169.587C140.067 169.902 137.792 170.826 135.9 172.358C134.007 173.845 132.633 175.737 131.777 178.034C131.642 182.81 131.462 187.63 131.237 192.496C131.057 197.317 130.966 201.822 130.966 206.012C130.966 208.084 130.989 210.066 131.034 211.959C131.124 213.851 131.282 215.518 131.507 216.959C131.552 217.41 131.53 217.725 131.439 217.905C131.394 218.086 131.282 218.176 131.102 218.176C130.921 218.176 130.719 218.131 130.493 218.041C130.268 217.951 130.065 217.86 129.885 217.77C129.705 217.68 129.66 217.793 129.75 218.108C129.84 218.424 129.885 218.739 129.885 219.054C129.93 219.415 129.863 219.663 129.682 219.798C129.547 219.978 129.142 219.865 128.466 219.46C128.106 219.144 127.655 218.897 127.114 218.716C126.619 218.581 126.439 218.694 126.574 219.054C126.619 219.189 126.484 219.257 126.168 219.257C125.853 219.302 125.47 219.257 125.02 219.122C124.614 218.987 124.209 218.739 123.803 218.379C123.443 218.018 123.195 217.5 123.06 216.824C122.835 215.428 122.609 213.941 122.384 212.364C122.204 210.742 122.046 208.985 121.911 207.093C121.776 205.156 121.663 203.038 121.573 200.741C121.483 198.398 121.438 195.762 121.438 192.834C121.438 190.626 121.438 188.239 121.438 185.671C121.483 183.058 121.573 180.197 121.708 177.088C121.888 171.457 122.114 165.893 122.384 160.396C122.654 154.9 122.947 149.877 123.262 145.327C123.578 140.731 123.916 136.789 124.276 133.5C124.682 130.212 125.11 127.959 125.56 126.743C125.65 126.292 125.83 126.022 126.101 125.932C126.416 125.842 126.979 125.684 127.79 125.459C128.556 125.233 129.345 125.008 130.155 124.783C131.011 124.558 131.665 124.512 132.115 124.648C132.295 124.738 132.543 124.738 132.859 124.648C133.174 124.558 133.467 124.512 133.737 124.512C134.052 124.512 134.3 124.603 134.48 124.783C134.706 124.963 134.773 125.323 134.683 125.864ZM222.129 214.594C222.129 215.135 221.927 215.743 221.521 216.419C221.161 217.049 220.62 217.365 219.899 217.365C219.494 217.365 219.178 217.252 218.953 217.027C218.728 216.802 218.503 216.689 218.277 216.689C217.962 216.689 217.647 216.802 217.331 217.027C217.061 217.252 216.588 217.365 215.912 217.365C215.011 217.365 214.223 217.049 213.547 216.419C212.916 215.743 212.398 214.91 211.993 213.918C211.587 212.882 211.272 211.778 211.046 210.607C210.866 209.391 210.776 208.264 210.776 207.228C210.776 205.201 210.844 202.903 210.979 200.335C211.159 197.722 211.339 195.064 211.52 192.361C211.745 189.613 211.925 186.887 212.06 184.184C212.24 181.481 212.33 178.98 212.33 176.683C212.33 173.619 212.128 171.232 211.722 169.52C211.317 167.808 210.596 166.952 209.56 166.952C208.569 167.087 207.555 167.943 206.519 169.52C205.483 171.096 204.424 173.124 203.343 175.602C202.261 178.034 201.203 180.805 200.166 183.914C199.13 186.977 198.117 190.131 197.125 193.375C196.179 196.573 195.278 199.704 194.422 202.768C193.566 205.786 192.8 208.49 192.125 210.877C191.449 213.265 190.863 215.202 190.368 216.689C189.872 218.131 189.534 218.852 189.354 218.852C188.993 218.852 188.723 218.761 188.543 218.581C188.363 218.446 188.183 218.288 188.002 218.108C187.867 217.928 187.687 217.748 187.462 217.568C187.236 217.432 186.899 217.365 186.448 217.365C186.043 217.365 185.772 217.41 185.637 217.5C185.502 217.59 185.344 217.703 185.164 217.838C184.984 217.973 184.759 218.086 184.488 218.176C184.218 218.266 183.745 218.311 183.069 218.311C182.258 218.311 181.447 218.108 180.636 217.703C179.87 217.297 179.488 216.667 179.488 215.811C179.488 215.27 179.578 214.166 179.758 212.499C179.938 210.787 180.141 208.715 180.366 206.282C180.636 203.804 180.907 201.056 181.177 198.037C181.492 194.974 181.763 191.82 181.988 188.577C182.258 185.333 182.483 182.089 182.664 178.845C182.844 175.602 182.934 172.515 182.934 169.587C182.934 168.145 182.911 166.816 182.866 165.6C182.821 164.339 182.799 163.145 182.799 162.018C182.799 161.748 182.934 161.613 183.204 161.613C183.745 161.613 184.15 161.726 184.421 161.951C184.736 162.131 184.961 162.334 185.096 162.559C185.232 162.784 185.299 163.01 185.299 163.235C185.344 163.415 185.389 163.505 185.434 163.505C185.57 163.505 185.727 163.437 185.907 163.302C186.088 163.122 186.268 162.942 186.448 162.762C186.673 162.582 186.876 162.424 187.056 162.289C187.236 162.108 187.394 162.018 187.529 162.018H188.205C188.881 162.018 189.354 161.928 189.624 161.748C189.895 161.523 190.075 161.298 190.165 161.072C190.3 160.802 190.39 160.577 190.435 160.396C190.48 160.171 190.615 160.059 190.841 160.059C190.976 160.059 191.156 160.171 191.381 160.396C191.652 160.577 191.899 160.915 192.125 161.41C192.395 161.861 192.62 162.469 192.8 163.235C192.981 164.001 193.071 164.924 193.071 166.005C193.071 167.447 193.003 169.272 192.868 171.479C192.778 173.687 192.643 176.052 192.463 178.575C192.327 181.053 192.192 183.576 192.057 186.144C191.922 188.667 191.832 190.964 191.787 193.037C192.282 191.099 192.868 188.96 193.544 186.617C194.265 184.229 195.076 181.819 195.977 179.386C196.923 176.953 197.936 174.588 199.018 172.29C200.099 169.948 201.27 167.875 202.532 166.073C203.793 164.271 205.122 162.829 206.519 161.748C207.915 160.622 209.38 160.059 210.911 160.059C213.344 160.059 215.326 160.509 216.858 161.41C218.435 162.311 219.674 163.55 220.575 165.127C221.476 166.704 222.084 168.551 222.4 170.668C222.76 172.786 222.94 175.061 222.94 177.494C222.94 179.566 222.85 181.751 222.67 184.049C222.49 186.301 222.287 188.577 222.062 190.874C221.882 193.127 221.701 195.357 221.521 197.564C221.386 199.772 221.318 201.844 221.318 203.782C221.318 206.169 221.454 208.332 221.724 210.269C221.994 212.161 222.129 213.603 222.129 214.594Z" fill="#7E452B"/>
     
-        <!-- Outils et methodologies -->
-        <div 
-          class=" mt-20 pb-24 max-sm:mt-12 outils max-sm:pb-12"
-          [class.text-black]="mode() == 'claire'"
-          [class.text-white]="mode() != 'claire'"
-        >
-            <div class=" font-bold text-5xl text-center max-sm:text-2xl">
-                Outils et méthodologies
-            </div>
-            <div class="w-[748px] text-xl font-normal mx-auto mt-7 max-[970px]:w-[620px] max-sm:text-sm max-sm:w-[296px] max-sm:mt-6">
-                A travers mes projets j’ai eu à explorer pas mal d’outils et de méthodologies de conception. Voici les outils avec lequel je travail le plus et dont j’ai une certaine expertise.
-            </div>
-            <div 
-              class="max-[970px]:w-[700px] max-[720px]:w-[350px] max-[720px]:grid max-sm:gap-8 rounded-[48px] w-[896px] bg-[#1D2025] shadow-ombre1 border-[1px] border-[#f9731647] border-dashed mx-auto mt-10 max-sm:mt-6 flex justify-center py-14 gap-28 max-sm:py-10 text-white max-sm:w-[296px]"
-              [class.border-orange-500]="mode() == 'claire'"
-            >
-                <!-- outils -->
-                <div class="max-sm:mx-auto">
-                    <div class="text-3xl text-orange-500 font-bold underline underline-offset-8 mb-6 max-sm:text-xl">
-                        Outils
-                    </div>
-                    @for (item of techno(); track item) {
-                        <div class="">
-                            <div class="flex items-center gap-[21px] max-sm:gap-3">  
-                                <div class="h-[41px] w-[41px] rounded-full border-[1px] flex flex-col justify-center border-dashed border-orange-500  max-sm:w-[24px] max-sm:h-[24px]">
-                                    <div class="w-[18px] h-[18px] mx-auto bg-cyan-600 rounded-full max-sm:w-[10px] max-sm:h-[10px]"></div>
-                                </div>
-                                <div class="text-2xl font-medium max-sm:text-base">
-                                    {{item.title}}
-                                </div>
-                            </div>
-                            @if (item.id !== 4) {
-                                <div class="border-dashed border-l-[1px] my-[2px] border-orange-500 h-[41px] w-[0.1px] max-sm:ml-3 ml-[20.5px] max-sm:h-[18px] "></div>
-                            }
-                        </div>
-                    }
+            }@else {
+    <rect x="4.325" y="4.325" width="337.35" height="337.35" rx="168.675" stroke="#fff" stroke-width="8.65"/>
+    <path d="M134.683 125.864C134.638 126.179 134.548 127.193 134.413 128.905C134.323 130.617 134.188 132.78 134.007 135.393C133.872 137.961 133.692 140.844 133.467 144.043C133.287 147.196 133.084 150.372 132.859 153.571C132.678 156.77 132.498 159.856 132.318 162.829C132.183 165.758 132.07 168.303 131.98 170.466C132.566 169.474 133.332 168.483 134.278 167.492C135.224 166.501 136.35 165.623 137.657 164.857C139.008 164.046 140.54 163.392 142.252 162.897C144.009 162.401 145.969 162.154 148.131 162.154C150.879 162.154 153.605 162.649 156.308 163.64C159.056 164.631 161.512 166.163 163.674 168.236C165.837 170.263 167.594 172.876 168.945 176.075C170.297 179.228 170.973 182.99 170.973 187.36C170.973 191.009 170.477 194.321 169.486 197.294C168.54 200.268 167.278 202.926 165.702 205.268C164.17 207.566 162.413 209.571 160.43 211.283C158.448 212.995 156.443 214.414 154.416 215.54C152.389 216.667 150.429 217.5 148.537 218.041C146.645 218.581 145 218.852 143.604 218.852C142.162 218.852 140.81 218.716 139.549 218.446C138.332 218.176 137.251 217.838 136.305 217.432C135.404 217.027 134.683 216.576 134.143 216.081C133.647 215.585 133.377 215.09 133.332 214.594C133.242 213.558 133.219 212.454 133.264 211.283C133.354 210.111 133.782 209.143 134.548 208.377C135.269 207.656 135.877 207.228 136.373 207.093C136.913 206.958 137.431 207.206 137.927 207.836C138.423 208.467 138.715 209.165 138.805 209.931C138.941 210.697 138.873 211.283 138.603 211.688C138.468 211.914 138.468 212.116 138.603 212.296C138.783 212.432 139.031 212.567 139.346 212.702C139.707 212.792 140.089 212.882 140.495 212.972C140.945 213.017 141.373 213.04 141.779 213.04C143.311 213.04 145.045 212.432 146.982 211.215C148.965 209.954 150.812 208.219 152.524 206.012C154.236 203.804 155.677 201.214 156.849 198.24C158.02 195.267 158.583 192.046 158.538 188.577C158.493 185.828 158.155 183.441 157.525 181.413C156.894 179.341 156.105 177.606 155.159 176.21C154.213 174.768 153.132 173.597 151.916 172.696C150.744 171.795 149.573 171.119 148.402 170.668C147.275 170.173 146.194 169.857 145.158 169.722C144.167 169.587 143.356 169.542 142.725 169.587C140.067 169.902 137.792 170.826 135.9 172.358C134.007 173.845 132.633 175.737 131.777 178.034C131.642 182.81 131.462 187.63 131.237 192.496C131.057 197.317 130.966 201.822 130.966 206.012C130.966 208.084 130.989 210.066 131.034 211.959C131.124 213.851 131.282 215.518 131.507 216.959C131.552 217.41 131.53 217.725 131.439 217.905C131.394 218.086 131.282 218.176 131.102 218.176C130.921 218.176 130.719 218.131 130.493 218.041C130.268 217.951 130.065 217.86 129.885 217.77C129.705 217.68 129.66 217.793 129.75 218.108C129.84 218.424 129.885 218.739 129.885 219.054C129.93 219.415 129.863 219.663 129.682 219.798C129.547 219.978 129.142 219.865 128.466 219.46C128.106 219.144 127.655 218.897 127.114 218.716C126.619 218.581 126.439 218.694 126.574 219.054C126.619 219.189 126.484 219.257 126.168 219.257C125.853 219.302 125.47 219.257 125.02 219.122C124.614 218.987 124.209 218.739 123.803 218.379C123.443 218.018 123.195 217.5 123.06 216.824C122.835 215.428 122.609 213.941 122.384 212.364C122.204 210.742 122.046 208.985 121.911 207.093C121.776 205.156 121.663 203.038 121.573 200.741C121.483 198.398 121.438 195.762 121.438 192.834C121.438 190.626 121.438 188.239 121.438 185.671C121.483 183.058 121.573 180.197 121.708 177.088C121.888 171.457 122.114 165.893 122.384 160.396C122.654 154.9 122.947 149.877 123.262 145.327C123.578 140.731 123.916 136.789 124.276 133.5C124.682 130.212 125.11 127.959 125.56 126.743C125.65 126.292 125.83 126.022 126.101 125.932C126.416 125.842 126.979 125.684 127.79 125.459C128.556 125.233 129.345 125.008 130.155 124.783C131.011 124.558 131.665 124.512 132.115 124.648C132.295 124.738 132.543 124.738 132.859 124.648C133.174 124.558 133.467 124.512 133.737 124.512C134.052 124.512 134.3 124.603 134.48 124.783C134.706 124.963 134.773 125.323 134.683 125.864ZM222.129 214.594C222.129 215.135 221.927 215.743 221.521 216.419C221.161 217.049 220.62 217.365 219.899 217.365C219.494 217.365 219.178 217.252 218.953 217.027C218.728 216.802 218.503 216.689 218.277 216.689C217.962 216.689 217.647 216.802 217.331 217.027C217.061 217.252 216.588 217.365 215.912 217.365C215.011 217.365 214.223 217.049 213.547 216.419C212.916 215.743 212.398 214.91 211.993 213.918C211.587 212.882 211.272 211.778 211.046 210.607C210.866 209.391 210.776 208.264 210.776 207.228C210.776 205.201 210.844 202.903 210.979 200.335C211.159 197.722 211.339 195.064 211.52 192.361C211.745 189.613 211.925 186.887 212.06 184.184C212.24 181.481 212.33 178.98 212.33 176.683C212.33 173.619 212.128 171.232 211.722 169.52C211.317 167.808 210.596 166.952 209.56 166.952C208.569 167.087 207.555 167.943 206.519 169.52C205.483 171.096 204.424 173.124 203.343 175.602C202.261 178.034 201.203 180.805 200.166 183.914C199.13 186.977 198.117 190.131 197.125 193.375C196.179 196.573 195.278 199.704 194.422 202.768C193.566 205.786 192.8 208.49 192.125 210.877C191.449 213.265 190.863 215.202 190.368 216.689C189.872 218.131 189.534 218.852 189.354 218.852C188.993 218.852 188.723 218.761 188.543 218.581C188.363 218.446 188.183 218.288 188.002 218.108C187.867 217.928 187.687 217.748 187.462 217.568C187.236 217.432 186.899 217.365 186.448 217.365C186.043 217.365 185.772 217.41 185.637 217.5C185.502 217.59 185.344 217.703 185.164 217.838C184.984 217.973 184.759 218.086 184.488 218.176C184.218 218.266 183.745 218.311 183.069 218.311C182.258 218.311 181.447 218.108 180.636 217.703C179.87 217.297 179.488 216.667 179.488 215.811C179.488 215.27 179.578 214.166 179.758 212.499C179.938 210.787 180.141 208.715 180.366 206.282C180.636 203.804 180.907 201.056 181.177 198.037C181.492 194.974 181.763 191.82 181.988 188.577C182.258 185.333 182.483 182.089 182.664 178.845C182.844 175.602 182.934 172.515 182.934 169.587C182.934 168.145 182.911 166.816 182.866 165.6C182.821 164.339 182.799 163.145 182.799 162.018C182.799 161.748 182.934 161.613 183.204 161.613C183.745 161.613 184.15 161.726 184.421 161.951C184.736 162.131 184.961 162.334 185.096 162.559C185.232 162.784 185.299 163.01 185.299 163.235C185.344 163.415 185.389 163.505 185.434 163.505C185.57 163.505 185.727 163.437 185.907 163.302C186.088 163.122 186.268 162.942 186.448 162.762C186.673 162.582 186.876 162.424 187.056 162.289C187.236 162.108 187.394 162.018 187.529 162.018H188.205C188.881 162.018 189.354 161.928 189.624 161.748C189.895 161.523 190.075 161.298 190.165 161.072C190.3 160.802 190.39 160.577 190.435 160.396C190.48 160.171 190.615 160.059 190.841 160.059C190.976 160.059 191.156 160.171 191.381 160.396C191.652 160.577 191.899 160.915 192.125 161.41C192.395 161.861 192.62 162.469 192.8 163.235C192.981 164.001 193.071 164.924 193.071 166.005C193.071 167.447 193.003 169.272 192.868 171.479C192.778 173.687 192.643 176.052 192.463 178.575C192.327 181.053 192.192 183.576 192.057 186.144C191.922 188.667 191.832 190.964 191.787 193.037C192.282 191.099 192.868 188.96 193.544 186.617C194.265 184.229 195.076 181.819 195.977 179.386C196.923 176.953 197.936 174.588 199.018 172.29C200.099 169.948 201.27 167.875 202.532 166.073C203.793 164.271 205.122 162.829 206.519 161.748C207.915 160.622 209.38 160.059 210.911 160.059C213.344 160.059 215.326 160.509 216.858 161.41C218.435 162.311 219.674 163.55 220.575 165.127C221.476 166.704 222.084 168.551 222.4 170.668C222.76 172.786 222.94 175.061 222.94 177.494C222.94 179.566 222.85 181.751 222.67 184.049C222.49 186.301 222.287 188.577 222.062 190.874C221.882 193.127 221.701 195.357 221.521 197.564C221.386 199.772 221.318 201.844 221.318 203.782C221.318 206.169 221.454 208.332 221.724 210.269C221.994 212.161 222.129 213.603 222.129 214.594Z" fill="#fff"/>
+    
+            }
+            </svg>
+    
+            <div class="">
+                <div class="text-4xl font-semibold  max-sm:text-2xl" 
+                [class.text-[#2B2F38]]="mode() == 'claire'"
+                [class.text-[#fff]]="mode() != 'claire'">
+                    Ma philosophie de travail
                 </div>
-                <!-- methodologies -->
-                <div class="">
-                    <div class="text-3xl text-orange-500 font-bold underline underline-offset-8 mb-6 max-sm:text-xl">
-                        méthodologies
-                    </div>
-                    @for (item of methode(); track item) {
-                        <div class="">
-                            <div class="flex items-center gap-[21px] max-sm:gap-3">  
-                                <div class="h-[41px] w-[41px] rounded-full border-[1px] border-dashed border-orange-500 content-center justify-items-center max-sm:w-[24px] max-sm:h-[24px] flex flex-col justify-center">
-                                    <div class="w-[18px] h-[18px] bg-[#5D3B88] rounded-full mx-auto max-sm:w-[10px] max-sm:h-[10px]"></div>
-                                </div>
-                                <div class="text-2xl font-medium max-sm:text-base">
-                                    {{item.title}}
-                                </div>
-                            </div>
-                            @if (item.id !== 9) {
-                                <div class="border-dashed border-l-[1px] my-[2px] border-orange-500 h-[41px] w-[0.1px] max-sm:ml-3 ml-[20.5px] max-sm:h-[18px] "></div>
-                            }
-                        </div>
-                    }
+                <div class="text-sm mt-6 w-[600px] max-[1180px]:w-[550px] max-[1080px]:w-full max-sm:mt-4"
+                [class.text-[#fff]]="mode() != 'claire'">
+                    Ma philosophie de travail repose sur une approche centrée sur l’utilisateur : comprendre ses besoins, ses frustrations et ses attentes pour concevoir des expériences à la fois simples et impactantes. <br> <br>
+                    
+                    Pour moi, le design n’est pas seulement une question d’esthétique, mais un équilibre entre clarté, accessibilité et efficacité. J’accorde une grande importance à la collaboration avec les équipes pluridisciplinaires, car je crois que les meilleurs produits naissent d’un dialogue constant entre design, technologie et stratégie. <br> <br>
+                    
+                    J’adopte une démarche itérative : tester rapidement, apprendre de l’utilisateur et améliorer en continu. Mon objectif est toujours de créer des solutions qui allient pertinence business et valeur pour l’utilisateur final.
                 </div>
             </div>
+
         </div>
         
-        <app-footer></app-footer>
+        <!-- mes comptences -->
+        <div class="mt-[150px] max-[1080px]:px-[50px] max-sm:mt-[70px] max-sm:px-[20px]">
+            <div class="text-5xl text-[#2B2F38] font-bold text-center max-sm:text-2xl " 
+                [class.text-[#2B2F38]]="mode() == 'claire'"
+                [class.text-[#fff]]="mode() != 'claire'">
+                Mes compétences
+            </div>
+            <div class="flex flex-col items-center justify-center pt-[50px]  max-sm:pt-[30px]" [class.text-[#fff]]="mode() != 'claire'">
+              <div class="flex flex-col md:flex-row gap-4 w-full max-w-5xl">
+                @for (bloc of competences; track bloc.title) {
+                  <div
+                    class="flex-1 rounded-[20px]  p-6 border border-[#7e452b5b] transition-all"
+                  >
+                    <h3 class="text-center font-semibold underline underline-offset-2 mb-4">
+                      {{ bloc.title }}
+                    </h3>
+            
+                    @for (item of bloc.items; track item.label) {
+                      <div class="mb-3">
+                        <div class="text-sm   mb-1">{{ item.label }}</div>
+                        <div class="w-full h-3 rounded-full overflow-hidden" 
+                        [class.bg-gray-200]="mode() == 'claire'"
+                        [class.bg-gray-700]="mode() != 'claire'"
+                        >
+                          <div
+                            class="h-full bg-[#7e452b] rounded-full transition-all duration-500"
+                            [style.width.%]="item.value"
+                          ></div>
+                        </div>
+                      </div>
+                    }
+                  </div>
+                }
+            </div>
+        </div>    
+        </div>
+
+        <app-footer [ambiance]="mode()"></app-footer>
+
+
     }
 </div>
+
