@@ -1,4 +1,4 @@
-<div class="bg-[#1D2025] duration-150 leading-[160%]" 
+<div class="bg-[#1D2025]  leading-[160%]" 
   [class.bg-[#2B2F38]]="mode() != 'claire'"
   [class.bg-[#FCFBFC]]="mode() == 'claire'">
 
@@ -117,7 +117,7 @@
         <app-nav [nav]="'apropos'" [src]="src" (mode)="modeDark($event)"></app-nav>
     
         <!-- header -->
-        <div class="hero py-[120px] flex justify-center gap-2 w-full max-[1080px]:grid max-[1080px]:px-[50px] max-sm:py-[60px] max-sm:px-[20px] overflow-hidden">
+        <div class="hero py-[120px] flex justify-center gap-2 w-full max-[1080px]:grid max-[1080px]:px-[50px] max-sm:py-[60px] max-sm:px-[20px] overflow-hidden" [style.background-image]="bgStyle()" >
             <!-- header droit -->
             <div 
               id="" 
