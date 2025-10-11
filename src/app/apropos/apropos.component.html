@@ -120,7 +120,7 @@
         <div class="hero py-[120px] flex justify-center gap-2 w-full max-[1080px]:grid max-[1080px]:px-[50px] max-sm:py-[60px] max-sm:px-[20px] overflow-hidden" [style.background-image]="bgStyle()" >
             <!-- header droit -->
             <div 
-              id="" 
+              id="head" 
               class=" text-5xl font-bold duration-150 ml-6  max-[1080px]:ml-0 max-[1080px]:w-full "
               [class.text-[#2B2F38]]="mode() == 'claire'"
               [class.text-[#fff]]="mode() != 'claire'"
@@ -147,7 +147,7 @@
     
     
         <!-- Philosophie -->
-        <div class="mt-[100px] flex justify-between w-[1078px] max-[1280px]:w-full max-[1280px]:gap-3 max-[1280px]:px-[50px] mx-auto max-[1080px]:flex-col max-[1080px]:items-center max-[1080px]:gap-[40px] max-sm:px-[20px] max-sm:mt-[50px]">
+        <div id="philosophie" class="mt-[100px] flex justify-between w-[1078px] max-[1280px]:w-full max-[1280px]:gap-3 max-[1280px]:px-[50px] mx-auto max-[1080px]:flex-col max-[1080px]:items-center max-[1080px]:gap-[40px] max-sm:px-[20px] max-sm:mt-[50px]">
             <svg class="max-sm:w-[200px] max-sm:h-[200px]" width="346" height="346" viewBox="0 0 346 346" fill="none" xmlns="http://www.w3.org/2000/svg">
             @if (mode() == 'claire') {
             <rect x="4.325" y="4.325" width="337.35" height="337.35" rx="168.675" stroke="#7E452B" stroke-width="8.65"/>
@@ -179,7 +179,7 @@
         </div>
         
         <!-- mes comptences -->
-        <div class="mt-[150px] max-[1080px]:px-[50px] max-sm:mt-[70px] max-sm:px-[20px]">
+        <div id="competences" class="mt-[150px] max-[1080px]:px-[50px] max-sm:mt-[70px] max-sm:px-[20px]">
             <div class="text-5xl text-[#2B2F38] font-bold text-center max-sm:text-2xl " 
                 [class.text-[#2B2F38]]="mode() == 'claire'"
                 [class.text-[#fff]]="mode() != 'claire'">
@@ -189,7 +189,7 @@
               <div class="flex flex-col md:flex-row gap-4 w-full max-w-5xl">
                 @for (bloc of competences; track bloc.title) {
                   <div
-                    class="flex-1 rounded-[20px]  p-6 border border-[#7e452b5b] transition-all"
+                    class="flex-1 rounded-[20px]  p-6 border border-[#7e452b5b] transition-all hover:shadow-lg"
                   >
                     <h3 class="text-center font-semibold underline underline-offset-2 mb-4">
                       {{ bloc.title }}

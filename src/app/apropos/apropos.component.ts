@@ -129,38 +129,30 @@ export class AproposComponent implements AfterViewInit{
       ease: 'bounce'
     })
 
-    gsap.from('#text',{
-      xPercent:50,
-      duration: 3,
-      opacity:0.2,
+    gsap.from('#head',{  
+      opacity:0,
+      scale : 0.8,
+      duration : 3,
+      ease : 'elastic'
     })
 
-    gsap.from('.img',{
+    gsap.from('#philosophie',{
       opacity : 0,
-      duration : 3,
+      duration : 2,
+      translateY : 50,
       scrollTrigger:{
-        trigger : '.img',
+        trigger : '#philosophie',
         start : 'top 75%',
       }
     })
 
-    gsap.from('.histoire',{
-      translateY : 100,
+    gsap.from('#competences',{
       opacity : 0,
-      duration : 3,
+      duration : 2,
+      translateY : 50,
       scrollTrigger:{
-        trigger : '.img',
-        start : 'top 45%',
-      }
-    })
-
-    gsap.from('.outils',{
-      translateY : 100,
-      opacity : 0,
-      duration : 1.5,
-      scrollTrigger:{
-        trigger : '.outils',
-        start : 'top 85%',
+        trigger : '#competences',
+        start : 'top 75%',
       }
     })
 
