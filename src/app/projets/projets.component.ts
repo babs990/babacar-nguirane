@@ -20,7 +20,7 @@ export class ProjetsComponent implements AfterViewInit {
   readonly projets = signal(projets)
   readonly projetsUi = signal(projetsUi)
   readonly projetsUx = signal(projetUx)
-  readonly User : any = signal(projetsUi)
+  readonly User : any = signal(projetUx)
   element : any
   src = localStorage.getItem('src') || ''
   mode = signal(localStorage.getItem('mode') || 'nuit')
@@ -34,12 +34,12 @@ export class ProjetsComponent implements AfterViewInit {
   }
 
   basculerUX(){
-    this.element.nativeElement.querySelector('#fond').classList.add('translate-x-full')
+    this.element.nativeElement.querySelector('#fond').classList.remove('translate-x-full')
     this.User.set(projetUx)
   }
 
   basculerUI(){
-    this.element.nativeElement.querySelector('#fond').classList.remove('translate-x-full')
+    this.element.nativeElement.querySelector('#fond').classList.add('translate-x-full')
     this.User.set(projetsUi)
   }
 
@@ -49,7 +49,7 @@ export class ProjetsComponent implements AfterViewInit {
    
    gsap.from('.projets', {
      opacity :0,
-     duration : 3,
+     duration : 2,
      delay: 0.3,
    })
  
@@ -66,11 +66,22 @@ export class ProjetsComponent implements AfterViewInit {
      delay: 0.3,
    })
  
-   gsap.from('#adja', {
+   gsap.to('#adja', {
+    opacity :0,
+    translateY : 50,
+    duration : 2,
+    delay: 0,
+    scrollTrigger:{
+      trigger :'#MBI',
+      start :'top 75%',
+    }
+  })
+
+     gsap.from('#Kilis', {
      opacity :0,
     translateY : 50,
     duration : 2,
-    delay: 2,
+    delay: 0,
     scrollTrigger:{
       trigger :'#MBI',
       start :'top 75%',
@@ -92,7 +103,7 @@ export class ProjetsComponent implements AfterViewInit {
     opacity :0,
     translateY : 50,
     duration : 2,
-    delay: 2,
+    delay: 0,
     scrollTrigger:{
       trigger :'#MBI',
       start :'top 75%',
@@ -103,7 +114,7 @@ export class ProjetsComponent implements AfterViewInit {
     opacity :0,
     translateY : 50,
     duration : 2,
-    delay: 2,
+    delay: 0,
     scrollTrigger:{
       trigger :'#MBI',
       start :'top 75%',
@@ -114,7 +125,7 @@ export class ProjetsComponent implements AfterViewInit {
     opacity :0,
     translateY : 50,
     duration : 2,
-    delay: 2,
+    delay: 0,
     scrollTrigger:{
       trigger :'#MBI',
       start :'top 75%',

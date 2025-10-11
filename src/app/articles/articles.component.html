@@ -1,4 +1,6 @@
-<div class="bg-[#1D2025] duration-150 text-white" [class.bg-[#d4d4d4]]="mode() == 'claire'">
+<div class=" duration-150 text-white leading-[160%]"
+  [class.bg-[#2B2F38]]="mode() != 'claire'"
+  [class.bg-[#FCFBFC]]="mode() == 'claire'">
     <app-nav [nav]="'articles'" [src]="src" (mode)="modeDark($event)"></app-nav>
 
     <div class="font-bold text-6xl text-center mt-32 articles max-sm:text-3xl max-sm:mt-16" [class.text-black]="mode() == 'claire'">
@@ -38,33 +40,29 @@
     }
     @if (skill() == 'ux'){
         <div 
-          class="text-2xl font-extralight w-[780px] mx-auto mt-10 description max-sm:text-base max-sm:w-full max-sm:px-10 max-sm:mt-5" 
-          [class.text-black]="mode() == 'claire'"
+          class="w-[739px] rounded-[33px]  backdrop-blur-3xl flex justify-center gap-5 py-9 mx-auto mt-20 text-white max-[900px]:w-[600px] max-[900px]:gap-10 max-sm:grid max-sm:w-[296px] max-sm:py-5 max-sm:mt-16 overflow-hidden article border-[1px] border-[#7E452B]"
         >
-          J’aime partager des contenues en rapport avec l'expérience utilisateur pour inspirer la communauté et participer à l'essor  de nouveaux développeurs .    
+        <div class="w-[277px] max-sm:w-[150px] max-sm:mx-auto">
+          <img ngSrc="self galsen.png" alt="angular" width="277" height="277">
         </div>
-        <div 
-          class="w-[739px] rounded-[33px]  backdrop-blur-3xl flex justify-center gap-20 py-9 mx-auto mt-20 text-white max-[900px]:w-[600px] max-[900px]:gap-10 max-sm:grid max-sm:w-[296px] max-sm:py-5 max-sm:mt-16 overflow-hidden article"
-          [class.bg-[#1d20256c]]="mode() == 'claire'"
-          [class.bg-[#ffffff27]]="mode() != 'claire'"
-        >
-            <div class="w-[277px] h-[277px] bg-[#1D2025] rounded-full p-[18px] max-sm:w-[91px] max-sm:h-[91px] max-sm:p-[8px] max-sm:mx-auto imgArticle">
-                <img ngSrc="ux.png" alt="angular" width="237" height="248">
+        <div class="w-[330px] max-sm:w-[262px] descArticle" 
+        [class.text-white]="mode()!='claire'" 
+        [class.text-black]="mode()=='claire'">
+            <div class="font-semibold text-3xl max-sm:text-xl">
+                Hiérarchie visuelles
             </div>
-            <div class="w-[294px] max-sm:w-[262px] descArticle">
-                <div class="font-semibold text-3xl max-sm:text-xl">
-                    C’est quoi le UX?
-                </div>
-                <div class="text-base mt-10 mb-12 max-sm:text-xs max-sm:mt-5 max-sm:mb-8">
-                    Dans cette article j’explique de manière claire c’est quoi l’expérience utilisateur ainsi que les avantages  de ce dernier.
-                </div>
+            <div class="text-base mt-5 mb-5 max-sm:text-xs max-sm:mt-4 max-sm:mb-4">
+               Dans cet article, j’explique de manière simple et structurée ce qu’est la hiérarchie visuelle en UX/UI, son importance dans la conception d’interfaces, ainsi que les bonnes pratiques pour l’appliquer efficacement.
+            </div>
+            <a href="cvux.pdf" class="flex justify-center w-full">
                 <div 
-                  class=" w-[220px]  h-[50px] text-2xl text-orange-500 border-[1px] border-orange-500 font-semibold bg-[#1D2025] rounded-full text-center max-sm:w-[124px] max-sm:h-8 max-sm:text-sm flex justify-center gap-3 mx-auto max-sm:items-center max-sm:pt-[1px]  cursor-pointer pt-2 animate-bounce hover:border-white duration-300 hover:text-white"
-                  routerLink="/articles/ux"
+                  class=" px-[25px]  h-[50px] content-center text-base text-[#fff] font-medium bg-[#7E452B] rounded-full text-center  max-sm:text-sm  cursor-pointer hover:scale-[105%] duration-500 w-fit "
                 >
-                  Lire l’article
-                </div>    
-            </div>
+                    Lire l'article
+                </div>
+            </a>
+
+        </div>    
         </div>
     }
     <app-footer></app-footer>

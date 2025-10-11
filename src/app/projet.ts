@@ -97,24 +97,6 @@ export const projetsUi = [
     },
     {
         numb: 2,
-        nom: 'Doctor app',
-        idName : 'Doctor',
-        description : 'Design UI d’une application mobile pour la prise de rendez-vous avec un médecin.',
-        dribbble : 'https://dribbble.com/shots/25684147-Doctor-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Doctor%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Doctor%20app&utm_medium=Social_Share',
-        behance : 'https://www.behance.net/gallery/220166797/Doctor-app',
-        img: 'Doctor.png'
-    },
-    {
-        numb: 3,
-        nom: 'SenGame app',
-        idName : 'sengame',
-        description : 'Design UI d’une application mobile destinée à l\'achat de materiels de jeux.',
-        dribbble : 'https://dribbble.com/shots/26194998-SenGame-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=SenGame%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=SenGame%20app&utm_medium=Social_Share',
-        behance : 'https://www.behance.net/gallery/228905245/SenGame-app',
-        img: 'sengameUI.png'
-    },
-    {
-        numb: 4,
         nom: 'Les recettes de Adja',
         idName : 'adja',
         description : 'Design UI d’une application mobile destinée à la vente de nourriture en ligne.',
@@ -123,7 +105,7 @@ export const projetsUi = [
         img: 'Adja.png'
     },
     {
-        numb: 5,
+        numb: 3,
         nom: 'B-WATCH',
         idName : 'bwatch',
         description : 'Design UI d’une application web destinée à la vente de montre en ligne.',
@@ -131,22 +113,46 @@ export const projetsUi = [
         behance : 'https://www.behance.net/gallery/209257233/B-WATCH-project',
         img: 'bwatch2.png'
     },
+        {
+        numb: 4,
+        nom: 'Tirailleurs',
+        idName : 'tirailleur',
+        description : 'Design UI d’une application web destinée à valoriser l\'histoire des tirailleurs senegalais.',
+        dribbble : 'https://dribbble.com/shots/26636084-Kilis-Kilas-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/234552405/Tirailleurs-sngalais',
+        img: 'tirailleurs.png'
+    },
 ]
 
 export const projetUx = [
     {
         numb: 1,
-        idName : 'sengame',
-        nom: 'SenGame app',
-        fichier : 'https://www.behance.net/gallery/228905245/SenGame-app',
-        img: 'sengame.png'
+        idName : 'Kilis',
+        nom: 'Kilis Kalas',
+        description : 'Use case d’une application mobile destinée a la réservation de taxi/moto .',
+        dribbble : 'https://dribbble.com/shots/26636084-Kilis-Kilas-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/236346881/Kilis-Kalas-app',
+        img: 'kilis kalas.png'
     },
+
     {
         numb: 2,
+        idName : 'sengame',
+        nom: 'SenGame app',
+        description : 'Use case d’une application mobile destinée a l’achat de matériels de jeux en ligne.',
+        dribbble : 'https://dribbble.com/shots/26194998-SenGame-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=SenGame%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=SenGame%20app&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/228905245/SenGame-app',
+        img: 'sengameUI.png'
+    },
+    {
+        numb: 3,
         idName : 'Doctor',
         nom: 'Doctor app',
-        fichier : 'https://www.behance.net/gallery/220166797/Doctor-app',
-        img: 'Doctor2.png'
+        description : 'Use case d’une application mobile destinée a la gestion de réservation des médecins ',
+        dribbble : 'https://dribbble.com/shots/25684147-Doctor-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Doctor%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Doctor%20app&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/220166797/Doctor-app',
+        img: 'Doctor.png'
+
     },
 
 ]
