@@ -319,7 +319,8 @@
                                 <img [ngSrc]="item.img" [alt]="item.nom" width="390" height="292">
                             </div>
                         </div>
-                        <div class="mt-[24px] text-2xl font-bold text-center max-sm:mt-4 max-sm:text-xl max-sm:font-semibold">
+                        <div class="text-[#2B2F38] mt-[24px] text-2xl font-bold text-center max-sm:mt-4 max-sm:text-xl max-sm:font-semibold"
+                        [class.text-white]="mode()!='claire'">
                             {{item.nom}}
                         </div>
                         <div class="w-[310px] font-normal mx-auto my-[18px] max-sm:text-sm max-sm:font-extralight max-sm:mt-[8px] max-sm:mb-[17.5px] max-sm:w-[235px]">
