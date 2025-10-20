@@ -3,7 +3,7 @@ import { NavComponent } from '../nav/nav.component';
 import { NgOptimizedImage } from '@angular/common';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { projets, projetUx } from '../projet';
+import { projetAcceuil, projets, projetUx } from '../projet';
 import { FooterComponent } from '../footer/footer.component';
 import { Router, RouterLink } from '@angular/router';
 import { outils } from '../projet';
@@ -20,7 +20,7 @@ export class AcceuilComponent implements AfterViewInit,OnInit{
 
   readonly router = inject(Router)
   readonly projets = signal(projets)
-  readonly design = signal(projetUx)
+  readonly design = signal(projetAcceuil)
   src = localStorage.getItem('src') || ''
   mode = signal(localStorage.getItem('mode') || 'claire')
   skill = signal(localStorage.getItem('skill'))
