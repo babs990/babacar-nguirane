@@ -125,15 +125,15 @@ export const projetsUi = [
 ]
 
 export const projetUx = [
-    {
-        numb: 1,
-        idName : 'Kilis',
-        nom: 'Kilis Kalas',
-        description : 'Use case d’une application mobile destinée a la réservation de taxi/moto .',
-        dribbble : 'https://dribbble.com/shots/26636084-Kilis-Kilas-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share',
-        behance : 'https://www.behance.net/gallery/236346881/Kilis-Kalas-app',
-        img: 'kilis kalas.png'
-    },
+    // {
+    //     numb: 1,
+    //     idName : 'Kilis',
+    //     nom: 'Kilis Kalas',
+    //     description : 'Use case d’une application mobile destinée a la réservation de taxi/moto .',
+    //     dribbble : 'https://dribbble.com/shots/26636084-Kilis-Kilas-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Kilis%20Kilas%20app&utm_medium=Social_Share',
+    //     behance : 'https://www.behance.net/gallery/236346881/Kilis-Kalas-app',
+    //     img: 'kilis kalas.png'
+    // },
 
     {
         numb: 2,
