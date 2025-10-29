@@ -43,6 +43,8 @@ export class AproposComponent implements AfterViewInit{
         { label: 'Mockups', value: 90 },
         { label: 'Prototypage', value: 90 },
         { label: 'Wireframing', value: 88 },
+        { label: 'HTMl, CSS, JavaScript', value: 70 },
+
       ],
     },
     {
@@ -53,6 +55,8 @@ export class AproposComponent implements AfterViewInit{
         { label: "Esprit d'équipe", value: 85 },
         { label: 'Flexibilité', value: 70 },
         { label: 'Collaboration', value: 80 },
+        { label: 'Résolution de problèmes', value: 80 },
+
       ],
     },
     {
@@ -63,6 +67,8 @@ export class AproposComponent implements AfterViewInit{
         { label: 'Figma', value: 90 },
         { label: 'Jira', value: 50 },
         { label: 'Illustrator', value: 75 },
+        { label: 'Miro', value: 70 },
+
       ],
     },
   ];
