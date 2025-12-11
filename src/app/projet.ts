@@ -126,6 +126,16 @@ export const projetsUi = [
 
 export const projetUx = [
     {
+        numb: 1,
+        nom: 'Waterflow',
+        idName : 'waterflow',
+        description : 'Use case d’une application web permettant le suivi à distance des distributeurs d\'eau.',
+        dribbble : 'https://dribbble.com/shots/26871514-Waterflow?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/240185217/Waterflow',
+        img: 'waterflow.png'
+    },
+    {
+        
         numb: 2,
         idName : 'sengame',
         nom: 'SenGame app',
@@ -150,19 +160,19 @@ export const projetUx = [
 export const projetAcceuil = [
     {
         numb: 1,
-        nom: 'My Africa',
-        idName : 'myafrica',
-        description : 'Design UI d’une application web destinée à la valorisation de la culture africaine.',
-        dribbble : 'https://dribbble.com/shots/25601285-My-Africa-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=My%20Africa%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=My%20Africa%20app&utm_medium=Social_Share',
-        behance : 'https://www.behance.net/gallery/218865945/My-Africa-app',
-        img: 'My Africa.png'
+        nom: 'Waterflow',
+        idName : 'waterflow',
+        description : 'Use case d’une application web permettant le suivi à distance des distributeurs d\'eau.',
+        dribbble : 'https://dribbble.com/shots/26871514-Waterflow?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/240185217/Waterflow',
+        img: 'waterflow.png'
     },
 
     {
         numb: 2,
         idName : 'sengame',
         nom: 'SenGame app',
-        description : 'Use case d’une application mobile destinée a l’achat de matériels de jeux en ligne.',
+        description : 'Use case d’une application mobile destinée à l’achat de matériels de jeux en ligne.',
         dribbble : 'https://dribbble.com/shots/26194998-SenGame-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=SenGame%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=SenGame%20app&utm_medium=Social_Share',
         behance : 'https://www.behance.net/gallery/228905245/SenGame-app',
         img: 'sengameUI.png'

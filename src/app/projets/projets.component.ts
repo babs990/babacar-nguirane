@@ -109,6 +109,17 @@ export class ProjetsComponent implements AfterViewInit {
       start :'top 75%',
     }
   })
+  gsap.from('#waterflow', {
+    opacity :0,
+    translateY : 50,
+    duration : 2,
+    delay: 0,
+    scrollTrigger:{
+      trigger :'#MBI',
+      start :'top 75%',
+    }
+  })
+  
 
   gsap.from('#myafrica', {
     opacity :0,
