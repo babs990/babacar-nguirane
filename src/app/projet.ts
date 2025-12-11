@@ -132,7 +132,7 @@ export const projetUx = [
         description : 'Use case d’une application web permettant le suivi à distance des distributeurs d\'eau.',
         dribbble : 'https://dribbble.com/shots/26871514-Waterflow?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share',
         behance : 'https://www.behance.net/gallery/240185217/Waterflow',
-        img: 'waterflow.png'
+        img: 'Waterflow.png'
     },
     {
         
@@ -165,7 +165,7 @@ export const projetAcceuil = [
         description : 'Use case d’une application web permettant le suivi à distance des distributeurs d\'eau.',
         dribbble : 'https://dribbble.com/shots/26871514-Waterflow?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Waterflow&utm_medium=Social_Share',
         behance : 'https://www.behance.net/gallery/240185217/Waterflow',
-        img: 'waterflow.png'
+        img: 'Waterflow.png'
     },
 
     {
