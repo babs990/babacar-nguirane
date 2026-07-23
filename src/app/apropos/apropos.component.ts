@@ -18,7 +18,7 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 export class AproposComponent implements AfterViewInit{
 
   src = localStorage.getItem('src') || ''
-  mode = signal(localStorage.getItem('mode') || 'nuit')
+  mode = signal(localStorage.getItem('mode') || 'claire')
   skill = signal(localStorage.getItem('skill'))
   outils = signal(outils)
   svg = signal('')

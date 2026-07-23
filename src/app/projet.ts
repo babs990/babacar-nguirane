@@ -127,6 +127,15 @@ export const projetsUi = [
 export const projetUx = [
     {
         numb: 1,
+        nom: 'Samba',
+        idName : 'samba',
+        description : 'Use case d’une application dédiée au tourisme et à la découverte du Sénégal .',
+        dribbble : 'https://dribbble.com/shots/27150653-Samba-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Samba%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Samba%20app&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/244982145/Samba-app',
+        img: 'samba.png'
+    },
+    {
+        numb: 2,
         nom: 'Waterflow',
         idName : 'waterflow',
         description : 'Use case d’une application web permettant le suivi à distance des distributeurs d\'eau.',
@@ -136,7 +145,7 @@ export const projetUx = [
     },
     {
         
-        numb: 2,
+        numb: 3,
         idName : 'sengame',
         nom: 'SenGame app',
         description : 'Use case d’une application mobile destinée a l’achat de matériels de jeux en ligne.',
@@ -145,7 +154,7 @@ export const projetUx = [
         img: 'sengameUI.png'
     },
     {
-        numb: 3,
+        numb: 4,
         idName : 'Doctor',
         nom: 'Doctor app',
         description : 'Use case d’une application mobile destinée a la gestion de réservation des médecins ',
@@ -160,6 +169,15 @@ export const projetUx = [
 export const projetAcceuil = [
     {
         numb: 1,
+        nom: 'Samba',
+        idName : 'samba',
+        description : 'Use case d’une application dédiée au tourisme et à la découverte du Sénégal .',
+        dribbble : 'https://dribbble.com/shots/27150653-Samba-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Samba%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Samba%20app&utm_medium=Social_Share',
+        behance : 'https://www.behance.net/gallery/244982145/Samba-app',
+        img: 'samba.png'
+    },
+    {
+        numb: 3,
         nom: 'Waterflow',
         idName : 'waterflow',
         description : 'Use case d’une application web permettant le suivi à distance des distributeurs d\'eau.',
@@ -177,16 +195,5 @@ export const projetAcceuil = [
         behance : 'https://www.behance.net/gallery/228905245/SenGame-app',
         img: 'sengameUI.png'
     },
-    {
-        numb: 3,
-        idName : 'Doctor',
-        nom: 'Doctor app',
-        description : 'Use case d’une application mobile destinée a la gestion de réservation des médecins ',
-        dribbble : 'https://dribbble.com/shots/25684147-Doctor-app?utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Doctor%20app&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=babs990&utm_content=Doctor%20app&utm_medium=Social_Share',
-        behance : 'https://www.behance.net/gallery/220166797/Doctor-app',
-        img: 'Doctor.png'
-
-    },
-
 ]
 

@@ -23,7 +23,7 @@ export class ProjetsComponent implements AfterViewInit {
   readonly User : any = signal(projetUx)
   element : any
   src = localStorage.getItem('src') || ''
-  mode = signal(localStorage.getItem('mode') || 'nuit')
+  mode = signal(localStorage.getItem('mode') || 'claire')
   
   modeDark(val :string){
     this.mode.set(val)
@@ -68,6 +68,16 @@ export class ProjetsComponent implements AfterViewInit {
  
    gsap.to('#adja', {
     opacity :0,
+    translateY : 50,
+    duration : 2,
+    delay: 0,
+    scrollTrigger:{
+      trigger :'#MBI',
+      start :'top 75%',
+    }
+  })
+    gsap.from('#samba', {
+     opacity :0,
     translateY : 50,
     duration : 2,
     delay: 0,

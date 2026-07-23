@@ -17,7 +17,7 @@ export class ArticlesComponent implements AfterViewInit {
 
   skill = signal(localStorage.getItem('skill'))
   src = localStorage.getItem('src') || ''
-  mode = signal(localStorage.getItem('mode') || 'nuit')
+  mode = signal(localStorage.getItem('mode') || 'claire')
   
   modeDark(val :string){
     this.mode.set(val)
